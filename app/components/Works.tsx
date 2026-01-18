@@ -11,18 +11,17 @@ export default function Works() {
     {
       year: '2025',
       works: [
-        { title: { en: 'Love Oath', th: 'ปณิธานร้อยรัก' }, role: { en: 'Pei Ning', th: 'เพ่ยหนิง' }, platform: 'IQIYI' },
-        { title: { en: 'The Tale of Jiu', th: 'ตำนานจิ่วไห่' }, role: { en: 'Han Yi', th: 'หานอี้' }, platform: 'YOUKU' },
-        { title: { en: 'Dangerous Game', th: 'เกมร้ายใคร่รัก' }, role: { en: 'Hua Yong', th: 'ฮวาหย่ง' }, platform: 'MONOMAX, GAGAOOLALA' },
+        { title: { en: `A Prime Minister's Disguise`, th: 'ปณิธานร้อยรัก' }, role: { en: 'Pei Ning', th: 'เพ่ยหนิง' }, platform: 'IQIYI' },
+        { title: { en: 'The Legend of Zang Hai', th: 'ตำนานจิ่วไห่' }, role: { en: 'Han Yi', th: 'หานอี้' }, platform: 'YOUKU' },
       ]
     },
     {
       year: '2024',
       works: [
-        { title: { en: 'Tricks of Love', th: 'ร้อยเล่ห์คะนึงรัก' }, role: { en: 'Xie Jing Shu', th: 'เซี่ยจิ้งซู' }, platform: 'IQIYI' },
-        { title: { en: 'NPC', th: 'อุบัติรัก NPC' }, role: { en: 'Ye Wu Ming / Xu Yi Chi', th: 'เย่อู่หมิง / สวีอี้ฉือ' }, platform: 'TrueID' },
-        { title: { en: 'World is not true', th: 'โลกนี้ไม่เป็นความจริง' }, role: { en: 'He Fan', th: 'เหอฟ่าน' }, platform: 'YOUKU' },
-        { title: { en: 'Fated to Love You', th: 'พรหมลิขิตนี้คือเธอ' }, role: { en: 'Nie Ling Feng', th: 'เนียหลิงเฟิง' }, platform: 'WETV' },
+        { title: { en: 'Miss You Forever', th: 'ร้อยเล่ห์คะนึงรัก' }, role: { en: 'Xie Jing Shu', th: 'เซี่ยจิ้งซู' }, platform: 'IQIYI' },
+        { title: { en: 'NPC Forbidden Love Between', th: 'อุบัติรัก NPC' }, role: { en: 'Ye Wu Ming / Xu Yi Chi', th: 'เย่อู่หมิง / สวีอี้ฉือ' }, platform: 'TrueID' },
+        { title: { en: 'This World is Not Real', th: 'โลกนี้ไม่เป็นความจริง' }, role: { en: 'He Fan', th: 'เหอฟ่าน' }, platform: 'YOUKU' },
+        { title: { en: 'You Are My Destiny', th: 'พรหมลิขิตนี้คือเธอ' }, role: { en: 'Nie Ling Feng', th: 'เนียหลิงเฟิง' }, platform: 'WETV' },
       ]
     },
     {
@@ -34,15 +33,15 @@ export default function Works() {
     {
       year: '2022',
       works: [
-        { title: { en: 'Warm Time With You', th: 'หวานใจคุณชายกู้' }, role: { en: 'Gu Chen', th: 'กู้เฉิน' }, platform: 'WETV' },
-        { title: { en: 'Love Across Time', th: 'รอยรักข้ามเวลา' }, role: { en: 'Zhou Yi Wu', th: 'โจวอี้อู่' }, platform: 'WETV' },
-        { title: { en: 'Hero', th: 'ฮีโร่ผู้นิ่งใหญ่เฉินเจี้ยนซิน' }, role: { en: 'Luo Feng', th: 'ลั่วเฟิง' }, platform: 'TENCENT' },
+        { title: { en: `Master Gu's Amnesia Sweet Wife`, th: 'หวานใจคุณชายกู้' }, role: { en: 'Gu Chen', th: 'กู้เฉิน' }, platform: 'WETV' },
+        { title: { en: 'The Forbidden Woman', th: 'รอยรักข้ามเวลา' }, role: { en: 'Zhou Yi Wu', th: 'โจวอี้อู่' }, platform: 'WETV' },
+        { title: { en: 'The Man From Dao Xiang Cun', th: 'ฮีโร่ผู้ยิ่งใหญ่เฉินเจี้ยนซิน' }, role: { en: 'Luo Feng', th: 'ลั่วเฟิง' }, platform: 'TENCENT' },
       ]
     },
     {
       year: '2021',
       works: [
-        { title: { en: 'Her is my destiny', th: 'เธอคือพรหมลิขิตของฉัน' }, role: { en: 'Hua Jing Nian', th: 'ฮั่วจิ้งเนียน' }, platform: 'WETV' },
+        { title: { en: 'You Are My Destiny', th: 'เธอคือพรหมลิขิตของฉัน' }, role: { en: 'Hua Jing Nian', th: 'ฮั่วจิ้งเนียน' }, platform: 'WETV' },
       ]
     }
   ];
@@ -70,6 +69,67 @@ export default function Works() {
         >
           {t('works.title')}
         </motion.h2>
+
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          className="mb-16 relative max-w-5xl mx-auto"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-blue-900/40 blur-3xl rounded-3xl -z-10" />
+          <div className="bg-zinc-900/60 border border-zinc-800 p-6 md:p-10 rounded-3xl backdrop-blur-md flex flex-col md:flex-row gap-8 items-center">
+            <div className="w-full md:w-1/4 aspect-[2/3] bg-zinc-800 rounded-xl overflow-hidden relative group shadow-2xl shadow-purple-900/20 flex-shrink-0">
+              <div className="absolute inset-0 flex items-center justify-center bg-zinc-800 text-zinc-600">
+                <span className="font-bold text-xl">Poster</span>
+              </div>
+              <img 
+                src="/work1.jpg" 
+                alt="Desire the Series" 
+                className="w-full h-full object-cover relative z-10"
+              />
+            </div>
+
+            <div className="w-full md:w-3/4 space-y-4 text-center md:text-left">
+              <div className="inline-block px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-bold tracking-wider mb-1">
+                Latest Highlights
+              </div>
+              <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+                {language === 'en' ? 'Desire the Series' : 'เกมร้ายใคร่รัก'}
+              </h3>
+              
+              <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                 <span className="px-3 py-1 bg-zinc-800 rounded text-xs text-gray-300">2025</span>
+                 <span className="px-3 py-1 bg-zinc-800 rounded text-xs text-gray-300">Drama</span>
+              </div>
+
+              <p className="text-lg text-gray-300">
+                {t('work.role1')}: <span className="text-white font-bold text-xl ml-2">{language === 'en' ? 'HuaYong' : 'ฮวาหย่ง'}</span>
+              </p>
+
+              <div className="pt-5 border-t border-zinc-700/50">
+                <p className="text-gray-400 text-xs mb-3 uppercase tracking-widest">Watch on</p>
+                <div className="flex gap-3 justify-center md:justify-start">
+                  <a 
+                    href="https://www.monomax.me/title/105413-a-b-o-desire.html#" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-[#E50914] text-white rounded font-bold text-xs hover:opacity-90 transition-opacity"
+                  >
+                    MONOMAX
+                  </a>
+                  <a 
+                    href="https://www.gagaoolala.com/en/videos/5570/desire-2025" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-[#00A0E9] text-white rounded font-bold text-xs hover:opacity-90 transition-opacity"
+                  >
+                    GAGAOOLALA
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Filmography Timeline */}
         <div className="mb-20">

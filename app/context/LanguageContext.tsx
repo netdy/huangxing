@@ -19,7 +19,7 @@ export const translations: Record<string, Record<Language, string>> = {
   
   // Profile / About
   'about.title': { en: 'Profile', th: 'ประวัติส่วนตัว' },
-  'profile.name': { en: 'Huang Xing (Eliott)', th: 'หวงซิง (Eliot)' },
+  'profile.name': { en: 'HUANGXING (Eliot)', th: 'หวงซิง (Eliot)' },
   'profile.origname': { en: 'Original Name: Huang Xin', th: 'ชื่อเดิม: หวงซิน' },
   'profile.dobLabel': { en: 'BIRTHDAY', th: 'วันเกิด' },
   'profile.dob': { en: 'Nov 25, 1999', th: '25 พ.ย. 1999' },
@@ -48,7 +48,7 @@ export const translations: Record<string, Record<Language, string>> = {
   'gallery.title': { en: 'Gallery', th: 'แกลเลอรี' },
 
   // Socials
-  'socials.title': { en: 'Follow Huang Xing', th: 'ติดตาม หวงซิง' },
+  'socials.title': { en: 'Follow Huang Xing', th: 'ช่องทางการติดตามหวงซิง' },
 
   // Navigation
   'nav.schedule': { en: 'Schedule', th: 'ตารางงาน' },
@@ -56,7 +56,7 @@ export const translations: Record<string, Record<Language, string>> = {
   'nav.socials': { en: 'Socials', th: 'โซเชียลมีเดีย' },
 
   // Works
-  'works.title': { en: 'Selected Works', th: 'ผลงานเด่น' },
+  'works.title': { en: 'Works', th: 'ผลงาน' },
   'works.drama': { en: 'Drama Series', th: 'ละครโทรทัศน์' },
   'works.music': { en: 'Music', th: 'ผลงานเพลง' },
   

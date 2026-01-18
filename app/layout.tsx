@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Kanit, Noto_Sans_SC } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Sans_SC } from "next/font/google";
+import "./fonts.css";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,12 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const kanit = Kanit({
-  variable: "--font-kanit",
-  weight: ["100", "200", "300", "400", "500", "600"],
-  subsets: ["latin", "thai"],
-});
-
 const notoSansSC = Noto_Sans_SC({
   variable: "--font-noto-sans-sc",
   weight: ["100", "300", "400", "500", "700"],
@@ -25,8 +20,8 @@ const notoSansSC = Noto_Sans_SC({
 });
 
 export const metadata: Metadata = {
-  title: "Huang Xing Official Fan Site",
-  description: "Official fan website for Huang Xing",
+  title: "Huang Xing Fan Site",
+  description: "Fan website for Huang Xing",
 };
 
 export default function RootLayout({
@@ -37,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} ${notoSansSC.variable} font-kanit antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSansSC.variable} antialiased`}
       >
         {children}
       </body>

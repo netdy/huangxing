@@ -27,7 +27,7 @@ export default function Home() {
         <Socials />
         
         <footer className="py-8 bg-zinc-950 text-center text-zinc-600 text-sm">
-          <p>&copy; {new Date().getFullYear()} Huang Xing Official Fan Site. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Huang Xing Fan Site. Form @HuangXingTH</p>
         </footer>
       </main>
     </LanguageProvider>

@@ -60,7 +60,7 @@ export default function About() {
           >
             {/* Name Header */}
             <div>
-              <h3 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-white mb-2">
+              <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-white mb-5 whitespace-nowrap">
                 {t('profile.name')}
               </h3>
               <p className="text-xl text-gray-400 font-light">{t('profile.origname')}</p>

@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 const images = [
-  'https://placehold.co/400x500/0b7de1/ffffff?text=Drama+Role',
-  'https://placehold.co/400x400/98c8ff/000000?text=Stage+Performance',
-  'https://placehold.co/400x600/171717/ffffff?text=Photoshoot',
-  'https://placehold.co/400x450/0b7de1/ffffff?text=Behind+The+Scenes',
-  'https://placehold.co/400x550/98c8ff/000000?text=Fashion',
-  'https://placehold.co/400x400/171717/ffffff?text=Daily+Life',
+  '/gallery/gallery1.jpg',
+  '/gallery/gallery2.jpg',
+  '/gallery/gallery3.jpg',
+  '/gallery/gallery4.jpg',
+  '/gallery/gallery5.jpg',
+  '/gallery/gallery6.jpg',
 ];
 
 export default function Gallery() {
@@ -27,7 +27,7 @@ export default function Gallery() {
           {t('gallery.title')}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, index) => (
             <motion.div
               key={index}

@@ -6,10 +6,10 @@ import { useLanguage } from '../context/LanguageContext';
 
 const socialLinks = [
   { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/ELIOT.HX', label: 'ELIOT.HX', color: 'hover:text-pink-500' },
-  { name: 'Weibo', icon: Globe, href: '#', label: '黄星ELIOT', color: 'hover:text-red-500' },
-  { name: 'Douyin', icon: Video, href: '#', label: '黄星ELIOT', color: 'hover:text-black hover:dark:text-white' }, 
-  { name: 'RedNote', icon: BookHeart, href: '#', label: '黄星ELIOT', color: 'hover:text-red-500' },
-  { name: 'TikTok', icon: Music, href: '#', label: 'ELIOT_1125', color: 'hover:text-black hover:dark:text-white' },
+  { name: 'Weibo', icon: Globe, href: 'https://weibo.com/u/2211239502', label: '黄星ELIOT', color: 'hover:text-red-500' },
+  { name: 'Douyin', icon: Video, href: 'https://v.douyin.com/7Mjf1cqeQTk/', label: '黄星ELIOT', color: 'hover:text-black hover:dark:text-white' }, 
+  { name: 'RedNote', icon: BookHeart, href: 'https://xhslink.com/m/9E6wRPW87lP', label: '黄星ELIOT', color: 'hover:text-red-500' },
+  { name: 'TikTok', icon: Music, href: 'https://www.tiktok.com/@eliot_1125?_r=1&_t=ZS-93AeV5QV6bn', label: 'ELIOT_1125', color: 'hover:text-black hover:dark:text-white' },
 ];
 
 export default function Socials() {
@@ -32,6 +32,8 @@ export default function Socials() {
             <motion.a
               key={index}
               href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}

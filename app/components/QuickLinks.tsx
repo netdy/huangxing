@@ -14,8 +14,17 @@ export default function QuickLinks() {
   ];
 
   return (
-    <section className="py-32 bg-black border-t border-b border-zinc-900">
-      <div className="max-w-4xl mx-auto px-4">
+    <section className="py-32 relative overflow-hidden border-t border-b border-zinc-900">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/quicklink.jpg" 
+          alt="Background" 
+          className="w-full h-full object-cover opacity-70 blur-sm"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center gap-8">
           {links.map((link, index) => (
             <motion.a
@@ -25,7 +34,7 @@ export default function QuickLinks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ delay: index * 0.1 }}
-              className="flex items-center gap-6 px-12 py-6 rounded-full bg-zinc-900/50 border border-zinc-800 text-gray-300 hover:text-white hover:border-primary-light hover:bg-zinc-900 transition-all duration-300 group w-full max-w-md justify-between"
+              className="flex items-center gap-6 px-12 py-6 rounded-full bg-zinc-900/40 border border-zinc-800 text-gray-300 hover:text-white hover:border-primary-light hover:bg-zinc-900/80 transition-all duration-300 group w-full max-w-md justify-between backdrop-blur-sm"
             >
               <div className="flex items-center gap-4">
                 <link.icon className="w-6 h-6 group-hover:text-primary-light transition-colors" />
