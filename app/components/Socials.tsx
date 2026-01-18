@@ -1,0 +1,52 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { BookHeart, Globe, Instagram, Music, Video } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+
+const socialLinks = [
+  { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/ELIOT.HX', label: 'ELIOT.HX', color: 'hover:text-pink-500' },
+  { name: 'Weibo', icon: Globe, href: '#', label: '黄星ELIOT', color: 'hover:text-red-500' },
+  { name: 'Douyin', icon: Video, href: '#', label: '黄星ELIOT', color: 'hover:text-black hover:dark:text-white' }, 
+  { name: 'RedNote', icon: BookHeart, href: '#', label: '黄星ELIOT', color: 'hover:text-red-500' },
+  { name: 'TikTok', icon: Music, href: '#', label: 'ELIOT_1125', color: 'hover:text-black hover:dark:text-white' },
+];
+
+export default function Socials() {
+  const { t } = useLanguage();
+
+  return (
+    <section id="socials" className="py-20 bg-black text-white">
+      <div className="max-w-4xl mx-auto text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          className="text-4xl font-bold mb-12 text-primary-light"
+        >
+          {t('socials.title')}
+        </motion.h2>
+
+        <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+          {socialLinks.map((social, index) => (
+            <motion.a
+              key={index}
+              href={social.href}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ delay: index * 0.1 }}
+              className={`flex flex-col items-center gap-3 group`}
+            >
+              <div className={`p-4 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-primary-light transition-colors duration-300 ${social.color}`}>
+                <social.icon size={32} className="transition-transform group-hover:scale-110 duration-300" />
+              </div>
+              <span className="font-medium">{social.name}</span>
+              <span className="text-xs text-gray-500 group-hover:text-primary-light transition-colors">{social.label}</span>
+            </motion.a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
