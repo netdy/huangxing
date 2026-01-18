@@ -14,7 +14,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const translations: Record<string, Record<Language, string>> = {
   // Hero
-  'hero.title': { en: 'HUANG XING', th: 'หวงซิง' },
+  'hero.title': { en: 'HUANGXING - 黄星', th: 'หวงซิง - 黄星' },
   'hero.subtitle': { en: 'Actor • Singer • Artist', th: 'นักแสดง • นักร้อง • ศิลปิน' },
   
   // Profile / About
