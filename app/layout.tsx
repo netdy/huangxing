@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   title: "Huang Xing Fan Site",
   description: "Fan website for Huang Xing",
   icons: {
-    icon: "/icon/apple-icon.png",
-    apple: "/icon/apple-icon.png",
+    icon: "/icon/apple.png",
+    apple: "/icon/apple.png",
   },
   manifest: "/manifest.webmanifest",
 };
