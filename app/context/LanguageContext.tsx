@@ -41,7 +41,7 @@ export const translations: Record<string, Record<Language, string>> = {
   'schedule.date': { en: 'Date', th: 'วันที่' },
   'schedule.time': { en: 'Time', th: 'เวลา' },
   'schedule.event': { en: 'Event', th: 'กิจกรรม' },
-  'schedule.location': { en: 'Location', th: 'สถานที่' },
+  'schedule.location': { en: 'Location', th: 'ช่องทางการรับชม' },
   'schedule.socialsLink': { en: 'Check Monthly Schedule on Social Media', th: 'ติดตามตารางงานรายเดือนได้ที่โซเชียลมีเดีย' },
 
   // Gallery

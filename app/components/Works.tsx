@@ -13,6 +13,7 @@ export default function Works() {
       works: [
         { title: { en: `A Prime Minister's Disguise`, th: 'ปณิธานร้อยรัก' }, role: { en: 'Pei Ning', th: 'เพ่ยหนิง' }, platform: 'IQIYI' },
         { title: { en: 'The Legend of Zang Hai', th: 'ตำนานจิ่วไห่' }, role: { en: 'Han Yi', th: 'หานอี้' }, platform: 'YOUKU' },
+        { title: { en: 'Desire The Series ', th: 'เกมร้ายใคร่รัก' }, role: { en: 'HuaYong', th: 'ฮวาหย่ง' }, platform: 'MONOMAX, GagaOOLala' },
       ]
     },
     {
@@ -47,7 +48,7 @@ export default function Works() {
   ];
 
   const music = [
-    '支配他', '驯服爱欲', 'TAME ME', '星空剪影', '同花顺'
+    '支配他', '驯服爱欲', 'TAME ME', '星空剪影', '同花顺','爱情讯息','又一岁' 
   ];
 
   const variety = [
@@ -57,8 +58,15 @@ export default function Works() {
   return (
     <section id="works" className="py-20 bg-zinc-950 text-white relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-dark/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-light/5 rounded-full blur-3xl"></div>
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+      >
+        <source src="/dance2.mp4" type="video/mp4" />
+      </video>
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.h2 
@@ -132,85 +140,110 @@ export default function Works() {
         </motion.div>
 
         {/* Filmography Timeline */}
-        <div className="mb-20">
-            <h3 className="text-2xl font-bold mb-8 flex items-center gap-3 text-white border-b border-zinc-800 pb-4">
-                <Film className="text-primary-light" />
-                {t('works.drama')}
-            </h3>
-            <div className="space-y-12 border-l-2 border-zinc-800 ml-4 md:ml-0 md:pl-0">
-                {filmography.map((yearGroup, index) => (
-                    <motion.div 
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false }}
-                        transition={{ delay: index * 0.1 }}
-                        className="relative pl-8 md:pl-0 md:grid md:grid-cols-[100px_1fr] md:gap-8"
-                    >
-                        {/* Year Marker */}
-                        <div className="absolute left-[-5px] top-2 w-3 h-3 rounded-full bg-primary-light md:relative md:left-auto md:top-auto md:w-auto md:h-auto md:bg-transparent md:text-right md:pt-1">
-                             <span className="hidden md:block text-2xl font-bold text-primary-light">{yearGroup.year}</span>
-                        </div>
-                        <span className="md:hidden text-xl font-bold text-primary-light mb-4 block">{yearGroup.year}</span>
+        <div className="mb-12">
+          <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-white border-b border-zinc-800 pb-3">
+            <Film className="text-primary-light w-5 h-5" />
+            {t('works.drama')}
+          </h3>
 
-                        {/* Works List */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                            {yearGroup.works.map((work, wIndex) => (
-                                <div key={wIndex} className="bg-zinc-900/50 border border-zinc-800 p-5 rounded-xl hover:bg-zinc-900 hover:border-primary-dark/50 transition-all group">
-                                    <h4 className="font-bold text-lg text-white group-hover:text-primary-light transition-colors mb-1">
-                                        {work.title[language]}
-                                    </h4>
-                                    <p className="text-sm text-gray-400 mb-2">{t('work.role1')}: <span className="text-gray-300">{work.role[language]}</span></p>
-                                    <span className="text-xs font-mono bg-zinc-800 text-zinc-400 px-2 py-1 rounded">
-                                        {work.platform}
-                                    </span>
-                                </div>
-                            ))}
-                        </div>
-                    </motion.div>
-                ))}
-            </div>
+          <div className="space-y-8 border-l border-zinc-800 ml-3 md:ml-0">
+            {filmography.map((yearGroup, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -12 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false }}
+                transition={{ delay: index * 0.08 }}
+                className="relative pl-6 md:pl-0 md:grid md:grid-cols-[80px_1fr] md:gap-6"
+              >
+                {/* Year */}
+                <div className="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-primary-light md:relative md:left-auto md:top-auto md:bg-transparent md:text-right">
+                  <span className="hidden md:block text-lg font-semibold text-primary-light">
+                    {yearGroup.year}
+                  </span>
+                </div>
+                <span className="md:hidden text-lg font-semibold text-primary-light mb-3 block">
+                  {yearGroup.year}
+                </span>
+
+                {/* Works */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                  {yearGroup.works.map((work, wIndex) => (
+                    <div
+                      key={wIndex}
+                      className="bg-zinc-900/40 border border-zinc-800 p-4 rounded-lg hover:border-primary-dark/40 transition-colors"
+                    >
+                      <h4 className="font-semibold text-base text-white mb-0.5">
+                        {work.title[language]}
+                      </h4>
+                      <p className="text-xs text-gray-400 mb-1">
+                        {t('work.role1')}:{" "}
+                        <span className="text-gray-300">
+                          {work.role[language]}
+                        </span>
+                      </p>
+                      <span className="text-[10px] font-mono bg-zinc-800 text-zinc-400 px-1.5 py-0.5 rounded">
+                        {work.platform}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
-        {/* Music & Variety Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-white border-b border-zinc-800 pb-4">
-                    <Music className="text-primary-light" />
-                    {t('works.music')}
-                </h3>
-                <ul className="space-y-3">
-                    {music.map((song, index) => (
-                        <motion.li 
-                            key={index}
-                            initial={{ opacity: 0, x: -10 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: false }}
-                            transition={{ delay: index * 0.05 }}
-                            className="flex items-center gap-3 p-3 rounded-lg bg-zinc-900/30 border border-zinc-800/50 hover:bg-zinc-900 transition-colors"
-                        >
-                            <span className="w-8 h-8 rounded-full bg-primary-dark/20 text-primary-light flex items-center justify-center text-xs font-bold">
-                                {index + 1}
-                            </span>
-                            <span className="text-gray-200 font-medium">{song}</span>
-                        </motion.li>
-                    ))}
-                </ul>
-            </div>
+        {/* Music & Variety */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
 
-            <div>
-                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-white border-b border-zinc-800 pb-4">
-                    <Tv className="text-primary-light" />
-                    Variety Show
-                </h3>
-                 <div className="bg-zinc-900/50 border border-zinc-800 p-6 rounded-xl relative overflow-hidden group">
-                     <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                         <Tv size={80} />
-                     </div>
-                     <h4 className="text-xl font-bold text-white mb-2">ASIA SUPER YOUNG</h4>
-                     <p className="text-gray-400">TVB</p>
-                 </div>
+          {/* Music (2/3) */}
+          <div className="md:col-span-2">
+            <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-white border-b border-zinc-800 pb-3">
+              <Music className="text-primary-light w-5 h-5" />
+              {t('works.music')}
+            </h3>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {music.map((song, index) => (
+                <motion.li
+                  key={index}
+                  initial={{ opacity: 0, y: 6 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ delay: index * 0.03 }}
+                  className="flex items-center gap-3 p-3 rounded-lg bg-zinc-900/40 border border-zinc-800 hover:border-primary-dark/40 transition-colors"
+                >
+                  <span className="w-7 h-7 shrink-0 rounded-full bg-primary-dark/20 text-primary-light flex items-center justify-center text-[11px] font-semibold">
+                    {index + 1}
+                  </span>
+                  <span className="text-sm text-gray-200 leading-snug">
+                    {song}
+                  </span>
+                </motion.li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Variety (1/3) */}
+          <div className="md:col-span-1">
+            <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-white border-b border-zinc-800 pb-3">
+              <Tv className="text-primary-light w-5 h-5" />
+              Variety Show
+            </h3>
+
+            <div className="bg-zinc-900/40 border border-zinc-800 p-4 rounded-lg relative overflow-hidden hover:border-primary-dark/40 transition-colors">
+              <div className="absolute top-0 right-0 p-3 opacity-5">
+                <Tv size={64} />
+              </div>
+
+              <h4 className="text-base font-semibold text-white mb-1">
+                ASIA SUPER YOUNG
+              </h4>
+              <p className="text-xs text-gray-400">
+                TVB
+              </p>
             </div>
+          </div>
         </div>
 
       </div>
