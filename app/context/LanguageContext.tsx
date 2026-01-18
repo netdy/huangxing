@@ -2,7 +2,7 @@
 
 import { createContext, ReactNode, useContext, useState } from 'react';
 
-type Language = 'en' | 'th' | 'cn';
+type Language = 'en' | 'th';
 
 interface LanguageContextType {
   language: Language;
@@ -14,64 +14,66 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const translations: Record<string, Record<Language, string>> = {
   // Hero
-  'hero.title': { en: 'HUANG XING', th: 'หวง ซิง', cn: '黄 兴' },
-  'hero.subtitle': { en: 'Actor • Singer • Artist', th: 'นักแสดง • นักร้อง • ศิลปิน', cn: '演员 • 歌手 • 艺术家' },
+  'hero.title': { en: 'HUANG XING', th: 'หวงซิง' },
+  'hero.subtitle': { en: 'Actor • Singer • Artist', th: 'นักแสดง • นักร้อง • ศิลปิน' },
   
   // Profile / About
-  'about.title': { en: 'Profile', th: 'ประวัติส่วนตัว', cn: '个人资料' },
-  'profile.name': { en: 'Huang Xing (Eliott)', th: 'หวง ซิง (Eliott)', cn: '黄星 (Eliott)' },
-  'profile.origname': { en: 'Original Name: Huang Xin', th: 'ชื่อเดิม: หวงซิน', cn: '原名: 黄鑫' },
-  'profile.dob': { en: 'Nov 25, 1999', th: '25 พ.ย. 1999', cn: '1999年11月25日' },
-  'profile.hometown': { en: 'Quanzhou, Fujian', th: 'เมืองเฉวียนโจว มณฑลฟูเจี้ยน', cn: '福建泉州' },
-  'profile.education': { en: 'Central Academy of Fine Arts', th: 'สถาบันศิลปะกลาง (CAFA)', cn: '中央美术学院' },
-  'profile.height': { en: 'Height', th: 'ส่วนสูง', cn: '身高' },
-  'profile.mbti': { en: 'MBTI', th: 'MBTI', cn: 'MBTI' },
-  'profile.fandom': { en: 'Fandom', th: 'ชื่อแฟนคลับ', cn: '粉丝名' },
-  'profile.fandomName': { en: 'Xiao Xing Gan', th: 'เสี่ยวซิงกาน (小星肝)', cn: '小星肝' },
-  'profile.color': { en: 'Official Color', th: 'สีประจำตัว', cn: '应援色' },
-  'profile.hobbies': { en: 'Hobbies', th: 'งานอดิเรก', cn: '爱好' },
-  'profile.hobbiesList': { en: 'Drawing, Dancing, Singing', th: 'วาดรูป, เต้น, ร้องเพลง', cn: '绘画, 跳舞, 唱歌' },
-  'profile.animal': { en: 'Animal', th: 'สัตว์แทนตัว', cn: '代表动物' },
+  'about.title': { en: 'Profile', th: 'ประวัติส่วนตัว' },
+  'profile.name': { en: 'Huang Xing (Eliott)', th: 'หวงซิง (Eliot)' },
+  'profile.origname': { en: 'Original Name: Huang Xin', th: 'ชื่อเดิม: หวงซิน' },
+  'profile.dobLabel': { en: 'BIRTHDAY', th: 'วันเกิด' },
+  'profile.dob': { en: 'Nov 25, 1999', th: '25 พ.ย. 1999' },
+  'profile.hometownLabel': { en: 'HOMETOWN', th: 'บ้านเกิด' },
+  'profile.hometown': { en: 'Quanzhou, Fujian', th: 'เมืองเฉวียนโจว มณฑลฟูเจี้ยน' },
+  'profile.educationLabel': { en: 'EDUCATION', th: 'การศึกษา' },
+  'profile.education': { en: 'Central Academy of Fine Arts', th: 'สถาบันศิลปะกลาง (CAFA)' },
+  'profile.height': { en: 'HEIGHT', th: 'ส่วนสูง' },
+  'profile.mbti': { en: 'MBTI', th: 'MBTI' },
+  'profile.fandom': { en: 'Fandom', th: 'ชื่อแฟนคลับ' },
+  'profile.fandomName': { en: 'XiaoXingGan (小星肝)', th: 'เสี่ยวซิงกาน (小星肝)' },
+  'profile.color': { en: 'Official Color', th: 'สีประจำตัว' },
+  'profile.hobbies': { en: 'Hobbies', th: 'งานอดิเรก' },
+  'profile.hobbiesList': { en: 'Drawing, Dancing, Singing', th: 'วาดรูป, เต้น, ร้องเพลง' },
+  'profile.animal': { en: 'Animal', th: 'สัตว์แทนตัว' },
   
   // Schedule
-  'schedule.title': { en: 'Upcoming Schedule', th: 'ตารางงานเร็วๆ นี้', cn: '近期行程' },
-  'schedule.date': { en: 'Date', th: 'วันที่', cn: '日期' },
-  'schedule.time': { en: 'Time', th: 'เวลา', cn: '时间' },
-  'schedule.event': { en: 'Event', th: 'กิจกรรม', cn: '活动' },
-  'schedule.location': { en: 'Location', th: 'สถานที่', cn: '地点' },
-  'schedule.socialsLink': { en: 'Check Monthly Schedule on Social Media', th: 'ติดตามตารางงานรายเดือนได้ที่โซเชียลมีเดีย', cn: '在社交媒体上查看每月日程' },
+  'schedule.title': { en: 'Upcoming Schedule', th: 'ตารางงานเร็วๆ นี้' },
+  'schedule.date': { en: 'Date', th: 'วันที่' },
+  'schedule.time': { en: 'Time', th: 'เวลา' },
+  'schedule.event': { en: 'Event', th: 'กิจกรรม' },
+  'schedule.location': { en: 'Location', th: 'สถานที่' },
+  'schedule.socialsLink': { en: 'Check Monthly Schedule on Social Media', th: 'ติดตามตารางงานรายเดือนได้ที่โซเชียลมีเดีย' },
 
   // Gallery
-  'gallery.title': { en: 'Gallery', th: 'แกลเลอรี', cn: '画廊' },
+  'gallery.title': { en: 'Gallery', th: 'แกลเลอรี' },
 
   // Socials
-  'socials.title': { en: 'Follow Huang Xing', th: 'ติดตาม หวง ซิง', cn: '关注 黄兴' },
+  'socials.title': { en: 'Follow Huang Xing', th: 'ติดตาม หวงซิง' },
 
   // Navigation
-  'nav.schedule': { en: 'Schedule', th: 'ตารางงาน', cn: '行程' },
-  'nav.gallery': { en: 'Gallery', th: 'แกลเลอรี', cn: '画廊' },
-  'nav.socials': { en: 'Socials', th: 'โซเชียลมีเดีย', cn: '社交媒体' },
+  'nav.schedule': { en: 'Schedule', th: 'ตารางงาน' },
+  'nav.gallery': { en: 'Gallery', th: 'แกลเลอรี' },
+  'nav.socials': { en: 'Socials', th: 'โซเชียลมีเดีย' },
 
   // Works
-  'works.title': { en: 'Selected Works', th: 'ผลงานเด่น', cn: '代表作品' },
-  'works.drama': { en: 'Drama Series', th: 'ละครโทรทัศน์', cn: '电视剧' },
-  'works.music': { en: 'Music', th: 'ผลงานเพลง', cn: '音乐作品' },
+  'works.title': { en: 'Selected Works', th: 'ผลงานเด่น' },
+  'works.drama': { en: 'Drama Series', th: 'ละครโทรทัศน์' },
+  'works.music': { en: 'Music', th: 'ผลงานเพลง' },
   
   // Specific Works
-  'work.forbidden': { en: 'The Forbidden Woman', th: 'The Forbidden Woman', cn: 'The Forbidden Woman' },
-  'work.role1': { en: 'Main Role', th: 'นักแสดงนำ', cn: '主演' },
-  'work.amnesia': { en: "Master Gu's Amnesia Sweet Wife", th: "Master Gu's Amnesia Sweet Wife", cn: "Master Gu's Amnesia Sweet Wife" },
-  'work.desire4': { en: 'DESIRE4', th: 'DESIRE4', cn: 'DESIRE4' },
-  'work.role2': { en: 'Boy Group Member', th: 'สมาชิกวงบอยกรุ๊ป', cn: '男团成员' },
+  'work.forbidden': { en: 'The Forbidden Woman', th: 'The Forbidden Woman' },
+  'work.role1': { en: 'Role', th: 'รับบท' },
+  'work.amnesia': { en: "Master Gu's Amnesia Sweet Wife", th: "Master Gu's Amnesia Sweet Wife" },
+  'work.desire4': { en: 'DESIRE4', th: 'DESIRE4' },
+  'work.role2': { en: 'Boy Group Member', th: 'สมาชิกวงบอยกรุ๊ป' },
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en'); // Default to English
+  const [language, setLanguage] = useState<Language>('th'); // Default to Thai
 
   const toggleLanguage = () => {
     setLanguage(prev => {
       if (prev === 'th') return 'en';
-      if (prev === 'en') return 'cn';
       return 'th';
     });
   };

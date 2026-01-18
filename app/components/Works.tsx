@@ -11,38 +11,38 @@ export default function Works() {
     {
       year: '2025',
       works: [
-        { title: { en: 'Love Oath', th: 'ปณิธานร้อยรัก', cn: 'Love Oath' }, role: { en: 'Pei Ning', th: 'เพ่ยหนิง', cn: 'Pei Ning' }, platform: 'IQIYI' },
-        { title: { en: 'The Tale of Jiu', th: 'ตำนานจิ่วไห่', cn: 'The Tale of Jiu' }, role: { en: 'Han Yi', th: 'หานอี้', cn: 'Han Yi' }, platform: 'YOUKU' },
-        { title: { en: 'Dangerous Game', th: 'เกมร้ายใคร่รัก', cn: 'Dangerous Game' }, role: { en: 'Hua Yong', th: 'ฮวาหย่ง', cn: 'Hua Yong' }, platform: 'MONOMAX, GAGAOOLALA' },
+        { title: { en: 'Love Oath', th: 'ปณิธานร้อยรัก' }, role: { en: 'Pei Ning', th: 'เพ่ยหนิง' }, platform: 'IQIYI' },
+        { title: { en: 'The Tale of Jiu', th: 'ตำนานจิ่วไห่' }, role: { en: 'Han Yi', th: 'หานอี้' }, platform: 'YOUKU' },
+        { title: { en: 'Dangerous Game', th: 'เกมร้ายใคร่รัก' }, role: { en: 'Hua Yong', th: 'ฮวาหย่ง' }, platform: 'MONOMAX, GAGAOOLALA' },
       ]
     },
     {
       year: '2024',
       works: [
-        { title: { en: 'Tricks of Love', th: 'ร้อยเล่ห์คะนึงรัก', cn: 'Tricks of Love' }, role: { en: 'Xie Jing Shu', th: 'เซี่ยจิ้งซู', cn: 'Xie Jing Shu' }, platform: 'IQIYI' },
-        { title: { en: 'NPC', th: 'อุบัติรัก NPC', cn: 'NPC' }, role: { en: 'Ye Wu Ming / Xu Yi Chi', th: 'เย่อู่หมิง / สวีอี้ฉือ', cn: 'Ye Wu Ming / Xu Yi Chi' }, platform: 'TrueID' },
-        { title: { en: 'World is not true', th: 'โลกนี้ไม่เป็นความจริง', cn: 'World is not true' }, role: { en: 'He Fan', th: 'เหอฟ่าน', cn: 'He Fan' }, platform: 'YOUKU' },
-        { title: { en: 'Fated to Love You', th: 'พรหมลิขิตนี้คือเธอ', cn: 'Fated to Love You' }, role: { en: 'Nie Ling Feng', th: 'เนียหลิงเฟิง', cn: 'Nie Ling Feng' }, platform: 'WETV' },
+        { title: { en: 'Tricks of Love', th: 'ร้อยเล่ห์คะนึงรัก' }, role: { en: 'Xie Jing Shu', th: 'เซี่ยจิ้งซู' }, platform: 'IQIYI' },
+        { title: { en: 'NPC', th: 'อุบัติรัก NPC' }, role: { en: 'Ye Wu Ming / Xu Yi Chi', th: 'เย่อู่หมิง / สวีอี้ฉือ' }, platform: 'TrueID' },
+        { title: { en: 'World is not true', th: 'โลกนี้ไม่เป็นความจริง' }, role: { en: 'He Fan', th: 'เหอฟ่าน' }, platform: 'YOUKU' },
+        { title: { en: 'Fated to Love You', th: 'พรหมลิขิตนี้คือเธอ' }, role: { en: 'Nie Ling Feng', th: 'เนียหลิงเฟิง' }, platform: 'WETV' },
       ]
     },
     {
       year: '2023',
       works: [
-        { title: { en: 'THE BELATED YOU', th: 'THE BELATED YOU', cn: 'THE BELATED YOU' }, role: { en: 'Si Teng', th: 'ซือเถิง', cn: 'Si Teng' }, platform: 'SOHU TV' },
+        { title: { en: 'THE BELATED YOU', th: 'THE BELATED YOU' }, role: { en: 'Si Teng', th: 'ซือเถิง' }, platform: 'SOHU TV' },
       ]
     },
     {
       year: '2022',
       works: [
-        { title: { en: 'Warm Time With You', th: 'หวานใจคุณชายกู้', cn: 'Warm Time With You' }, role: { en: 'Gu Chen', th: 'กู้เฉิน', cn: 'Gu Chen' }, platform: 'WETV' },
-        { title: { en: 'Love Across Time', th: 'รอยรักข้ามเวลา', cn: 'Love Across Time' }, role: { en: 'Zhou Yi Wu', th: 'โจวอี้อู่', cn: 'Zhou Yi Wu' }, platform: 'WETV' },
-        { title: { en: 'Hero', th: 'ฮีโร่ผู้นิ่งใหญ่เฉินเจี้ยนซิน', cn: 'Hero' }, role: { en: 'Luo Feng', th: 'ลั่วเฟิง', cn: 'Luo Feng' }, platform: 'TENCENT' },
+        { title: { en: 'Warm Time With You', th: 'หวานใจคุณชายกู้' }, role: { en: 'Gu Chen', th: 'กู้เฉิน' }, platform: 'WETV' },
+        { title: { en: 'Love Across Time', th: 'รอยรักข้ามเวลา' }, role: { en: 'Zhou Yi Wu', th: 'โจวอี้อู่' }, platform: 'WETV' },
+        { title: { en: 'Hero', th: 'ฮีโร่ผู้นิ่งใหญ่เฉินเจี้ยนซิน' }, role: { en: 'Luo Feng', th: 'ลั่วเฟิง' }, platform: 'TENCENT' },
       ]
     },
     {
       year: '2021',
       works: [
-        { title: { en: 'Her is my destiny', th: 'เธอคือพรหมลิขิตของฉัน', cn: 'Her is my destiny' }, role: { en: 'Hua Jing Nian', th: 'ฮั่วจิ้งเนียน', cn: 'Hua Jing Nian' }, platform: 'WETV' },
+        { title: { en: 'Her is my destiny', th: 'เธอคือพรหมลิขิตของฉัน' }, role: { en: 'Hua Jing Nian', th: 'ฮั่วจิ้งเนียน' }, platform: 'WETV' },
       ]
     }
   ];

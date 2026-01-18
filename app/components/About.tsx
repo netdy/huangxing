@@ -8,10 +8,10 @@ export default function About() {
   const { t } = useLanguage();
 
   const stats = [
-    { icon: Calendar, label: 'profile.dob', value: 'profile.dob' },
+    { icon: Calendar, label: 'profile.dobLabel', value: 'profile.dob' },
     { icon: Ruler, label: 'profile.height', value: '183 CM' },
-    { icon: MapPin, label: 'profile.hometown', value: 'profile.hometown' },
-    { icon: GraduationCap, label: 'profile.education', value: 'profile.education' },
+    { icon: MapPin, label: 'profile.hometownLabel', value: 'profile.hometown' },
+    { icon: GraduationCap, label: 'profile.educationLabel', value: 'profile.education' },
   ];
 
   const facts = [

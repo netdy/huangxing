@@ -54,12 +54,23 @@ export default function BackgroundMusic() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={togglePlay}
-        className={`relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg border-2 backdrop-blur-md transition-all duration-300 ${
+        className={`relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg border-2 backdrop-blur-md transition-all duration-300 group ${
           isPlaying 
             ? 'bg-primary-dark/80 border-primary-light shadow-primary-dark/50' 
             : 'bg-zinc-800/80 border-zinc-600 shadow-black/50'
         }`}
       >
+        {!isPlaying && (
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
+            className="absolute right-16 bg-white text-black text-xs font-bold py-1 px-3 rounded-md whitespace-nowrap shadow-lg"
+          >
+            Play Music
+            <div className="absolute top-1/2 -right-1 transform -translate-y-1/2 border-4 border-transparent border-l-white"></div>
+          </motion.div>
+        )}
         <AnimatePresence mode="wait">
           {isPlaying ? (
             <motion.div

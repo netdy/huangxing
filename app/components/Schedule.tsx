@@ -5,27 +5,27 @@ import { useLanguage } from '../context/LanguageContext';
 
 const scheduleData = [
   { 
-    date: { en: '21 JAN', th: '21 ม.ค.', cn: '1月21日' }, 
+    date: { en: '21 JAN', th: '21 ม.ค.' }, 
     time: '20:00',
-    event: { en: 'Script Reading Teaser', th: 'ตัวอย่างกิจกรรมอ่านบทละคร', cn: '剧本朗读预告' }, 
+    event: { en: 'Script Reading Teaser', th: 'ตัวอย่างกิจกรรมอ่านบทละคร' }, 
     location: 'Weibo : @ DESIRE4_' 
   },
   { 
-    date: { en: '24 JAN', th: '24 ม.ค.', cn: '1月24日' }, 
+    date: { en: '24 JAN', th: '24 ม.ค.' }, 
     time: '19:00',
-    event: { en: 'Full Script Reading', th: 'การร่วมอ่านบทละครฉบับเต็ม', cn: '剧本朗读完整版' }, 
+    event: { en: 'Full Script Reading', th: 'การร่วมอ่านบทละครฉบับเต็ม' }, 
     location: 'Weibo : @ DESIRE4_' 
   },
   { 
-    date: { en: '28 JAN', th: '28 ม.ค.', cn: '1月28日' }, 
+    date: { en: '28 JAN', th: '28 ม.ค.' }, 
     time: '18:00',
-    event: { en: 'Training Camp Teaser', th: 'ตัวอย่างรายการค่ายฝึกการแสดง', cn: '训练营预告' }, 
+    event: { en: 'Training Camp Teaser', th: 'ตัวอย่างรายการค่ายฝึกการแสดง' }, 
     location: 'Weibo : @ DESIRE4_' 
   },
   { 
-    date: { en: '31 JAN', th: '31 ม.ค.', cn: '1月31日' }, 
+    date: { en: '31 JAN', th: '31 ม.ค.' }, 
     time: '20:00',
-    event: { en: 'Training Camp Ep.1', th: 'ค่ายฝึกการแสดง ตอนที่ 1', cn: '训练营 第1期' }, 
+    event: { en: 'Training Camp Ep.1', th: 'ค่ายฝึกการแสดง ตอนที่ 1' }, 
     location: 'Weibo : @ DESIRE4_' 
   },
 ];
