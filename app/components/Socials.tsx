@@ -17,7 +17,7 @@ export default function Socials() {
 
   return (
     <section id="socials" className="py-20 bg-black text-white">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export default function Socials() {
           {t('socials.title')}
         </motion.h2>
 
-        <div className="grid grid-cols-6 md:flex md:flex-wrap md:justify-center gap-4 md:gap-16">
+        <div className="grid grid-cols-6 md:flex md:flex-wrap md:justify-center gap-x-4 gap-y-8 md:gap-16">
           {socialLinks.map((social, index) => (
             <motion.a
               key={index}
@@ -38,13 +38,13 @@ export default function Socials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ delay: index * 0.1 }}
-              className={`flex flex-col items-center gap-3 group col-span-2 ${index === 3 ? 'col-start-2' : ''}`}
+              className={`flex flex-col items-center gap-2 group col-span-2 ${index === 3 ? 'col-start-2' : ''}`}
             >
-              <div className={`p-4 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-primary-light transition-colors duration-300 ${social.color}`}>
-                <social.icon size={32} className="transition-transform group-hover:scale-110 duration-300" />
+              <div className={`p-3 md:p-4 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-primary-light transition-colors duration-300 ${social.color}`}>
+                <social.icon size={24} className="md:w-8 md:h-8 w-6 h-6 transition-transform group-hover:scale-110 duration-300" />
               </div>
-              <span className="font-medium">{social.name}</span>
-              <span className="text-xs text-gray-500 group-hover:text-primary-light transition-colors">{social.label}</span>
+              <span className="text-sm md:text-base font-medium">{social.name}</span>
+              <span className="text-[10px] md:text-xs text-gray-500 group-hover:text-primary-light transition-colors">{social.label}</span>
             </motion.a>
           ))}
         </div>
