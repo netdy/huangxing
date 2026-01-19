@@ -9,7 +9,7 @@ export default function Collaborations() {
   // 7 Solo Brands (Edit names, roles, and images here)
   const soloBrands = [
     { name: '卡姿兰CARSLAN', role: 'BA Black Magnet', image: '/icon/apple.png' },
-    { name: '阿芙AFU', role: 'BA มาสก์น้ำผึ้ง', image: '/icon/apple.png' },
+    { name: '阿芙AFU', role: 'BA Honey Mask', image: '/icon/apple.png' },
     { name: 'SKYNFUTURE肌肤未来', role: 'BA 477 Whitening', image: '/icon/apple.png' },
     { name: 'WINONA薇诺娜', role: 'BA 311 Barrier', image: '/icon/apple.png' },
     { name: 'PANDORA潘多拉珠宝', role: 'BA', image: '/icon/apple.png' },

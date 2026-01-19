@@ -68,9 +68,8 @@ export const translations: Record<string, Record<Language, string>> = {
   'work.role2': { en: 'Boy Group Member', th: 'สมาชิกวงบอยกรุ๊ป' },
   // Brands
   'brands.title': { en: 'Brand Collaborations', th: 'แบรนด์ที่ร่วมงาน' },
-  'brands.solo': { en: 'BRAND X HUANGXING', th: 'BRAND X HUANGXING' },
-  'brands.shared': { en: 'XING & QIU', th: 'XING & QIU' },
-
+  'brands.solo': { en: 'HUANGXING', th: 'HUANGXING' },
+  'brands.shared': { en: 'HUANGXING & QIUDINGJIE', th: 'HUANGXING & QIUDINGJIE' },
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
