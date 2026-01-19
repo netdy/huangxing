@@ -65,7 +65,7 @@ export const translations: Record<string, Record<Language, string>> = {
   'work.role1': { en: 'Role', th: 'รับบท' },
   'work.amnesia': { en: "Master Gu's Amnesia Sweet Wife", th: "Master Gu's Amnesia Sweet Wife" },
   'work.desire4': { en: 'DESIRE4', th: 'DESIRE4' },
-  'work.role2': { en: 'Boy Group Member', th: 'สมาชิกวงบอยกรุ๊ป' },
+
   // Brands
   'brands.title': { en: 'Brand Collaborations', th: 'แบรนด์ที่ร่วมงาน' },
   'brands.solo': { en: 'HUANGXING', th: 'HUANGXING' },
