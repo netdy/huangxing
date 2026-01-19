@@ -48,7 +48,7 @@ export const translations: Record<string, Record<Language, string>> = {
   'gallery.title': { en: 'Gallery', th: 'แกลเลอรี' },
 
   // Socials
-  'socials.title': { en: 'Follow Huang Xing', th: 'ช่องทางการติดตามหวงซิง' },
+  'socials.title': { en: 'Follow HuangXing', th: 'ช่องทางการติดตามหวงซิง' },
 
   // Navigation
   'nav.schedule': { en: 'Schedule', th: 'ตารางงาน' },

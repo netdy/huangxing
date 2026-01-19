@@ -45,7 +45,7 @@ export default function About() {
               <div className="absolute inset-0 bg-primary-light/20 blur-2xl rounded-2xl group-hover:opacity-100 transition-opacity duration-500 opacity-50"></div>
               <img 
                 src="/profile.JPG" 
-                alt="Huang Xing" 
+                alt="HuangXing" 
                 className="relative z-10 rounded-2xl shadow-2xl w-full h-auto object-cover aspect-[3/4] border border-white/10"
               />
             </div>
