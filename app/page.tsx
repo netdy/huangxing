@@ -7,6 +7,7 @@ import Schedule from "./components/Schedule";
 import Socials from "./components/Socials";
 import { LanguageProvider } from "./context/LanguageContext";
 
+import Collaborations from "./components/Collaborations";
 import QuickLinks from "./components/QuickLinks";
 import Works from "./components/Works";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <QuickLinks />
         <Works />
+        <Collaborations />
         <section id="schedule">
           <Schedule />
         </section>

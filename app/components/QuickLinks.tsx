@@ -1,20 +1,23 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, Globe, Image } from 'lucide-react';
+import { Calendar, Crown, Film, Globe, Image, User } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function QuickLinks() {
   const { t } = useLanguage();
 
   const links = [
+    { id: 'about', icon: User, label: 'about.title', href: '#about' },
+    { id: 'works', icon: Film, label: 'works.title', href: '#works' },
+    { id: 'brands', icon: Crown, label: 'brands.title', href: '#brands' },
     { id: 'schedule', icon: Calendar, label: 'nav.schedule', href: '#schedule' },
     { id: 'gallery', icon: Image, label: 'nav.gallery', href: '#gallery' },
     { id: 'socials', icon: Globe, label: 'nav.socials', href: '#socials' },
   ];
 
   return (
-    <section className="py-32 relative overflow-hidden border-t border-b border-zinc-900">
+    <section className="py-20 relative overflow-hidden border-t border-b border-zinc-900">
       <div className="absolute inset-0 z-0">
         <img 
           src="/quicklink.jpg" 
@@ -25,16 +28,16 @@ export default function QuickLinks() {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 relative z-10">
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-4">
           {links.map((link, index) => (
             <motion.a
               key={link.id}
               href={link.href}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{ delay: index * 0.1 }}
-              className="flex items-center gap-6 px-12 py-6 rounded-full bg-zinc-900/40 border border-zinc-800 text-gray-300 hover:text-white hover:border-primary-light hover:bg-zinc-900/80 transition-all duration-300 group w-full max-w-md justify-between backdrop-blur-sm"
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+              className="flex items-center gap-6 px-8 py-4 rounded-full bg-zinc-900/40 border border-zinc-800 text-gray-300 hover:text-white hover:border-primary-light hover:bg-zinc-900/80 transition-all duration-300 group w-full max-w-md justify-between backdrop-blur-sm"
             >
               <div className="flex items-center gap-4">
                 <link.icon className="w-6 h-6 group-hover:text-primary-light transition-colors" />
