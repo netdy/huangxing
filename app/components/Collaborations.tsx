@@ -13,8 +13,8 @@ export default function Collaborations() {
     { name: 'SKYNFUTURE肌肤未来', role: 'BA 477 Whitening', image: '/icon/apple.png' },
     { name: 'WINONA薇诺娜', role: 'BA 311 Barrier', image: '/icon/apple.png' },
     { name: 'PANDORA潘多拉珠宝', role: 'BA', image: '/icon/apple.png' },
-    { name: 'MENTHOLATUM', role: 'BA Hada Labo', image: '/icon/apple.png' },
-    { name: 'REDCHAMBER朱栈', role: 'BA Makeup', image: '/icon/apple.png' },
+    { name: 'MENTHOLATUM', role: 'BA ', image: '/icon/apple.png' },
+    { name: 'REDCHAMBER朱栈', role: 'BA', image: '/icon/apple.png' },
   ];
 
   // 6 Brands with QIUDINGJIE (Edit names, roles, and images here)

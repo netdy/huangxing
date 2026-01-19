@@ -18,6 +18,7 @@ export default function Home() {
         <BackgroundMusic />
         <LanguageToggle />
         <Hero />
+        <Socials />
         <About />
         <QuickLinks />
         <Works />
@@ -26,7 +27,6 @@ export default function Home() {
           <Schedule />
         </section>
         <Gallery />
-        <Socials />
         
         <footer className="py-8 bg-zinc-950 text-center text-zinc-600 text-sm">
           <p>&copy; {new Date().getFullYear()} HuangXing FanSite. Form @HuangXingTH</p>
