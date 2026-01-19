@@ -19,8 +19,8 @@ export default function Home() {
         <LanguageToggle />
         <Hero />
         <Socials />
-        <About />
         <QuickLinks />
+        <About />
         <Works />
         <Collaborations />
         <section id="schedule">

@@ -34,8 +34,17 @@ export default function Schedule() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="py-20 px-4 bg-zinc-950 text-white">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-20 px-4 bg-zinc-950 text-white relative overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/schedule.jpg" 
+          alt="Schedule Background" 
+          className="w-full h-full object-cover opacity-70 blur-sm"
+        />
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
