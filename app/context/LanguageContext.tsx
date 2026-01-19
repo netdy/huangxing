@@ -20,7 +20,7 @@ export const translations: Record<string, Record<Language, string>> = {
   // Profile / About
   'about.title': { en: 'Profile', th: 'ประวัติส่วนตัว' },
   'profile.name': { en: 'HUANGXING (Eliot)', th: 'หวงซิง (Eliot)' },
-  'profile.origname': { en: 'Original Name: Huang Xin', th: 'ชื่อเดิม: หวงซิน' },
+  'profile.origname': { en: 'Original Name: HuangXin（黄鑫）', th: 'ชื่อเดิม: หวงซิน（黄鑫）' },
   'profile.dobLabel': { en: 'BIRTHDAY', th: 'วันเกิด' },
   'profile.dob': { en: 'Nov 25, 1999', th: '25 พ.ย. 1999' },
   'profile.hometownLabel': { en: 'HOMETOWN', th: 'บ้านเกิด' },
