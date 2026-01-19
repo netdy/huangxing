@@ -20,7 +20,7 @@ const notoSansSC = Noto_Sans_SC({
 });
 
 export const metadata: Metadata = {
-  title: "HuangXing FanSite",
+  title: "EliotHuang - 黄星",
   description: "Fan website for HuangXing",
   icons: {
     icon: "/icon/apple.png",
