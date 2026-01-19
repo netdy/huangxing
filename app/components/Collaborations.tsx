@@ -21,7 +21,7 @@ export default function Collaborations() {
   const sharedBrands = [
     { name: 'EHD', role: 'BA', image: '/brand/ehd.jpg' },
     { name: 'HOMEFACIALPRO', role: 'BA', image: '/brand/hfp.jpg' },
-    { name: 'SOCORSKIN', role: 'BA', image: '/brand/socorskin.jpg' },
+    { name: 'SOCORSKIN', role: 'BA', image: '/brand/socoskin.jpg' },
     { name: 'MERRYCHENG', role: 'BA', image: '/brand/merrycheng.jpg' },
     { name: 'MISTINE', role: 'BA', image: '/brand/mistine.jpg' },
     { name: 'LAFANG', role: 'BA', image: '/brand/lafang.jpg' },
