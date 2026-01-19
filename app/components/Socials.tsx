@@ -27,7 +27,7 @@ export default function Socials() {
           {t('socials.title')}
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-6 md:gap-16">
+        <div className="grid grid-cols-6 md:flex md:flex-wrap md:justify-center gap-4 md:gap-16">
           {socialLinks.map((social, index) => (
             <motion.a
               key={index}
@@ -38,7 +38,7 @@ export default function Socials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ delay: index * 0.1 }}
-              className={`flex flex-col items-center gap-3 group ${index === socialLinks.length - 1 && socialLinks.length % 2 !== 0 ? 'col-span-2 md:col-span-1' : ''}`}
+              className={`flex flex-col items-center gap-3 group col-span-2 ${index === 3 ? 'col-start-2' : ''}`}
             >
               <div className={`p-4 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-primary-light transition-colors duration-300 ${social.color}`}>
                 <social.icon size={32} className="transition-transform group-hover:scale-110 duration-300" />

@@ -8,23 +8,23 @@ export default function Collaborations() {
 
   // 7 Solo Brands (Edit names, roles, and images here)
   const soloBrands = [
-    { name: '卡姿兰CARSLAN', role: 'BA Black Magnet', image: '/icon/apple.png' },
-    { name: '阿芙AFU', role: 'BA Honey Mask', image: '/icon/apple.png' },
-    { name: 'SKYNFUTURE肌肤未来', role: 'BA 477 Whitening', image: '/icon/apple.png' },
-    { name: 'WINONA薇诺娜', role: 'BA 311 Barrier', image: '/icon/apple.png' },
-    { name: 'PANDORA潘多拉珠宝', role: 'BA', image: '/icon/apple.png' },
-    { name: 'MENTHOLATUM', role: 'BA ', image: '/icon/apple.png' },
-    { name: 'REDCHAMBER朱栈', role: 'BA', image: '/icon/apple.png' },
+    { name: '卡姿兰CARSLAN', role: 'BA Black Magnet', image: '/brand/carslan.jpg' },
+    { name: '阿芙AFU', role: 'BA Honey Mask', image: '/brand/afu.jpg' },
+    { name: 'SKYNFUTURE肌肤未来', role: 'BA 477 Whitening', image: '/brand/skynfuture.jpg' },
+    { name: 'WINONA薇诺娜', role: 'BA 311 Barrier', image: '/brand/winona.jpg' },
+    { name: 'PANDORA潘多拉珠宝', role: 'BA', image: '/brand/pandora.jpg' },
+    { name: 'MENTHOLATUM', role: 'BA', image: '/brand/mentro.jpg' },
+    { name: 'REDCHAMBER朱栈', role: 'BA', image: '/brand/rc.jpg' },
   ];
 
   // 6 Brands with QIUDINGJIE (Edit names, roles, and images here)
   const sharedBrands = [
-    { name: 'EHD', role: 'BA', image: '/icon/apple.png' },
-    { name: 'HOMEFACIALPRO', role: 'BA', image: '/icon/apple.png' },
-    { name: 'SOCORSKIN', role: 'BA', image: '/icon/apple.png' },
-    { name: 'MERRYCHENG', role: 'BA', image: '/icon/apple.png' },
-    { name: 'MISTINE', role: 'BA', image: '/icon/apple.png' },
-    { name: 'LAFANG', role: 'BA', image: '/icon/apple.png' },
+    { name: 'EHD', role: 'BA', image: '/brand/ehd.jpg' },
+    { name: 'HOMEFACIALPRO', role: 'BA', image: '/brand/hfp.jpg' },
+    { name: 'SOCORSKIN', role: 'BA', image: '/brand/socorskin.jpg' },
+    { name: 'MERRYCHENG', role: 'BA', image: '/brand/merrycheng.jpg' },
+    { name: 'MISTINE', role: 'BA', image: '/brand/mistine.jpg' },
+    { name: 'LAFANG', role: 'BA', image: '/brand/lafang.jpg' },
   ];
 
   const renderBrands = (brands: typeof soloBrands, titleKey: string) => (
