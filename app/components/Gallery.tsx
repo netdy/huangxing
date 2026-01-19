@@ -28,7 +28,7 @@ export default function Gallery() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-4xl font-bold text-center mb-12 text-primary-light"
+          className="text-4xl font-bold text-center mb-8 md:mb-12 text-primary-light"
         >
           {t('gallery.title')}
         </motion.h2>

@@ -56,7 +56,7 @@ export default function Works() {
   ];
 
   return (
-    <section id="works" className="py-20 bg-zinc-950 text-white relative overflow-hidden">
+    <section id="works" className="py-10 md:py-20 bg-zinc-950 text-white relative overflow-hidden">
       {/* Background Decor */}
       <video 
         autoPlay 
@@ -73,7 +73,7 @@ export default function Works() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-4xl font-bold text-center mb-16 text-primary-light"
+          className="text-4xl font-bold text-center mb-8 md:mb-16 text-primary-light"
         >
           {t('works.title')}
         </motion.h2>

@@ -22,13 +22,13 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 md:px-20 bg-gradient-to-b from-black to-zinc-900 text-white">
+    <section id="about" className="py-10 md:py-20 px-4 md:px-20 bg-gradient-to-b from-black to-zinc-900 text-white">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-4xl font-bold text-center mb-16 text-primary-light"
+          className="text-4xl font-bold text-center mb-8 md:mb-16 text-primary-light"
         >
           {t('about.title')}
         </motion.h2>

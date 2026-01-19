@@ -17,7 +17,7 @@ export default function QuickLinks() {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden border-t border-b border-zinc-900">
+    <section className="py-10 md:py-20 relative overflow-hidden border-t border-b border-zinc-900">
       <div className="absolute inset-0 z-0">
         <img 
           src="/quicklink.jpg" 

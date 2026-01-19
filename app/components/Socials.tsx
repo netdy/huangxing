@@ -16,13 +16,13 @@ export default function Socials() {
   const { t } = useLanguage();
 
   return (
-    <section id="socials" className="py-20 bg-black text-white">
+    <section id="socials" className="py-10 md:py-20 bg-black text-white">
       <div className="max-w-4xl mx-auto text-center px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-4xl font-bold mb-12 text-primary-light"
+          className="text-4xl font-bold mb-8 md:mb-12 text-primary-light"
         >
           {t('socials.title')}
         </motion.h2>

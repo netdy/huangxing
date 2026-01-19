@@ -34,7 +34,7 @@ export default function Schedule() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="py-20 px-4 bg-zinc-950 text-white relative overflow-hidden">
+    <section className="py-10 md:py-20 px-4 bg-zinc-950 text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
           src="/schedule.jpg" 
@@ -49,7 +49,7 @@ export default function Schedule() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.8 }} // Re-triggers animation
-          className="text-4xl font-bold text-center mb-12 text-primary-light"
+          className="text-4xl font-bold text-center mb-8 md:mb-12 text-primary-light"
         >
           {t('schedule.title')}
         </motion.h2>

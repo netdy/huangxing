@@ -20,10 +20,10 @@ export default function Hero() {
       
       <div className="relative z-10 text-center px-4">
         <motion.h1 
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-6xl md:text-8xl font-bold tracking-tighter mb-4"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-white">
