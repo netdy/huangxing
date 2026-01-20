@@ -22,13 +22,13 @@ export default function Gallery() {
   const { t } = useLanguage();
 
   return (
-    <section id="gallery" className="py-10 px-4 bg-black">
+    <section id="gallery" className="py-10 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-4xl font-bold text-center mb-8 md:mb-12 text-primary-light"
+          className="text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900"
         >
           {t('gallery.title')}
         </motion.h2>

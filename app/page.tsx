@@ -14,7 +14,7 @@ import Works from "./components/Works";
 export default function Home() {
   return (
     <LanguageProvider>
-      <main className="min-h-screen bg-black">
+      <main className="min-h-screen bg-white">
         <BackgroundMusic />
         <LanguageToggle />
         <Hero />
@@ -28,7 +28,7 @@ export default function Home() {
         </section>
         <Gallery />
         
-        <footer className="py-8 bg-zinc-950 text-center text-zinc-600 text-sm">
+        <footer className="py-8 bg-gray-50 text-center text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} HuangXing FanSite. Form @HuangXingTH</p>
         </footer>
       </main>

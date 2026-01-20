@@ -34,14 +34,14 @@ export default function Schedule() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="py-10 md:py-20 px-4 bg-zinc-950 text-white relative overflow-hidden">
+    <section className="py-10 md:py-20 px-4 bg-white text-gray-900 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
           src="/schedule.jpg" 
           alt="Schedule Background" 
           className="w-full h-full object-cover opacity-70 blur-sm"
         />
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-white/90" />
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
@@ -69,19 +69,19 @@ export default function Schedule() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, margin: "-100px" }} // Re-triggers animation
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex flex-col md:flex-row items-center justify-between p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-primary-dark/30 transition-colors"
+              className="group flex flex-col md:flex-row items-center justify-between p-6 rounded-xl border border-gray-200 bg-white shadow-sm hover:bg-gray-50 hover:border-primary-dark/30 transition-colors"
             >
               <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 w-full">
                  <div className="text-xl font-bold text-primary-light min-w-[100px] text-center md:text-left">
                   {item.date[language]}
                  </div>
                  
-                 <div className="text-lg font-mono text-zinc-400 min-w-[80px] text-center border-l-0 md:border-l border-zinc-800 md:pl-8">
+                 <div className="text-lg font-mono text-gray-500 min-w-[80px] text-center border-l-0 md:border-l border-gray-200 md:pl-8">
                    {item.time}
                  </div>
 
                  <div className="flex-grow text-center md:text-left md:pl-4">
-                   <h3 className="text-lg font-medium group-hover:text-white transition-colors">
+                   <h3 className="text-lg font-medium group-hover:text-primary-dark transition-colors">
                      {item.event[language]}
                    </h3>
                  </div>

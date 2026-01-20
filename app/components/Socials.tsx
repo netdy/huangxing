@@ -16,7 +16,7 @@ export default function Socials() {
   const { t } = useLanguage();
 
   return (
-    <section id="socials" className="py-10 md:py-20 bg-black text-white">
+    <section id="socials" className="py-10 md:py-20 bg-white text-gray-900">
       <div className="max-w-4xl mx-auto text-center px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -40,11 +40,11 @@ export default function Socials() {
               transition={{ delay: index * 0.1 }}
               className={`flex flex-col items-center gap-2 group col-span-2 ${index === 3 ? 'col-start-2' : ''}`}
             >
-              <div className={`p-3 md:p-4 rounded-full bg-zinc-900 border border-zinc-800 group-hover:border-primary-light transition-colors duration-300 ${social.color}`}>
+              <div className={`p-3 md:p-4 rounded-full bg-white border border-gray-100 shadow-sm group-hover:border-primary-light transition-colors duration-300 ${social.color}`}>
                 <social.icon size={24} className="md:w-8 md:h-8 w-6 h-6 transition-transform group-hover:scale-110 duration-300" />
               </div>
               <span className="text-sm md:text-base font-medium">{social.name}</span>
-              <span className="text-[10px] md:text-xs text-gray-500 group-hover:text-primary-light transition-colors">{social.label}</span>
+              <span className="text-[10px] md:text-xs text-gray-500 group-hover:text-primary-dark transition-colors">{social.label}</span>
             </motion.a>
           ))}
         </div>

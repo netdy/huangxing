@@ -57,7 +57,7 @@ export default function BackgroundMusic() {
         className={`relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg border-2 backdrop-blur-md transition-all duration-300 group ${
           isPlaying 
             ? 'bg-primary-dark/80 border-primary-light shadow-primary-dark/50' 
-            : 'bg-zinc-800/80 border-zinc-600 shadow-black/50'
+            : 'bg-white/90 border-gray-300 shadow-lg text-gray-800'
         }`}
       >
         {!isPlaying && (
@@ -65,7 +65,7 @@ export default function BackgroundMusic() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
-            className="absolute right-16 bg-white text-black text-xs font-bold py-1 px-3 rounded-md whitespace-nowrap shadow-lg"
+            className="absolute right-16 bg-white text-gray-900 text-xs font-bold py-1 px-3 rounded-md whitespace-nowrap shadow-lg border border-gray-200"
           >
             Play Music
             <div className="absolute top-1/2 -right-1 transform -translate-y-1/2 border-4 border-transparent border-l-white"></div>
@@ -90,7 +90,7 @@ export default function BackgroundMusic() {
               exit={{ scale: 0, opacity: 0 }}
               className="absolute"
             >
-              <Music size={24} className="text-white" />
+              <Music size={24} className="text-gray-800" />
             </motion.div>
           )}
         </AnimatePresence>

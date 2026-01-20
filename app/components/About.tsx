@@ -22,13 +22,13 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-10 md:py-20 px-4 md:px-20 bg-gradient-to-b from-black to-zinc-900 text-white">
+    <section id="about" className="py-10 md:py-20 px-4 md:px-20 bg-white text-gray-900">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-4xl font-bold text-center mb-8 md:mb-16 text-primary-light"
+          className="text-4xl font-bold text-center mb-8 md:mb-16 text-gray-900"
         >
           {t('about.title')}
         </motion.h2>
@@ -42,11 +42,11 @@ export default function About() {
             className="w-full lg:w-1/3"
           >
             <div className="relative group">
-              <div className="absolute inset-0 bg-primary-light/20 blur-2xl rounded-2xl group-hover:opacity-100 transition-opacity duration-500 opacity-50"></div>
+              <div className="absolute inset-0 bg-primary-light/20 blur-2xl rounded-2xl group-hover:opacity-100 transition-opacity duration-500 opacity-50 mix-blend-multiply"></div>
               <img 
                 src="/profile.JPG" 
                 alt="HuangXing" 
-                className="relative z-10 rounded-2xl shadow-2xl w-full h-auto object-cover aspect-[3/4] border border-white/10"
+                className="relative z-10 rounded-2xl shadow-xl w-full h-auto object-cover aspect-[3/4] border border-gray-100"
               />
             </div>
           </motion.div>
@@ -60,22 +60,22 @@ export default function About() {
           >
             {/* Name Header */}
             <div>
-              <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-white mb-5 whitespace-nowrap">
+              <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-dark mb-5 whitespace-nowrap">
                 {t('profile.name')}
               </h3>
-              <p className="text-xl text-gray-400 font-light">{t('profile.origname')}</p>
+              <p className="text-xl text-gray-600 font-light">{t('profile.origname')}</p>
             </div>
 
             {/* Key Stats Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {stats.map((stat, index) => (
-                <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary-light/50 transition-colors">
+                <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-primary-light/50 transition-colors shadow-sm">
                   <div className="p-3 rounded-full bg-primary-dark/20 text-primary-light">
                     <stat.icon size={24} />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400 uppercase tracking-wider">{t(stat.label)}</p>
-                    <p className="text-lg font-medium">{stat.value.startsWith('profile.') ? t(stat.value) : stat.value}</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider">{t(stat.label)}</p>
+                    <p className="text-lg font-medium text-gray-900">{stat.value.startsWith('profile.') ? t(stat.value) : stat.value}</p>
                   </div>
                 </div>
               ))}
@@ -83,13 +83,13 @@ export default function About() {
 
             {/* Fun Facts */}
             <div className="space-y-4">
-              <h4 className="text-2xl font-bold text-white border-l-4 border-primary-light pl-4">Personal Info</h4>
+              <h4 className="text-2xl font-bold text-gray-900 border-l-4 border-primary-light pl-4">Personal Info</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {facts.map((fact, index) => (
-                  <div key={index} className="p-4 rounded-xl bg-gradient-to-br from-primary-dark/10 to-transparent border border-white/5 text-center hover:-translate-y-1 transition-transform">
-                     <fact.icon size={20} className="mx-auto mb-2 text-primary-light" />
-                     <p className="text-xs text-gray-400 mb-1">{t(fact.label)}</p>
-                     <p className="font-bold text-white">
+                  <div key={index} className="p-4 rounded-xl bg-gray-50 border border-gray-100 text-center hover:-translate-y-1 transition-transform shadow-sm">
+                     <fact.icon size={20} className="mx-auto mb-2 text-primary-dark" />
+                     <p className="text-xs text-gray-500 mb-1">{t(fact.label)}</p>
+                     <p className="font-bold text-gray-900">
                         {fact.label === 'profile.color' ? (
                           <span className="flex items-center justify-center gap-2">
                              <span className="w-4 h-4 rounded-full bg-[#98c8ff]"></span>
@@ -103,12 +103,12 @@ export default function About() {
             </div>
             
             {/* Hobbies */}
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10 relative overflow-hidden">
+            <div className="p-6 rounded-2xl bg-gray-50 border border-gray-100 relative overflow-hidden shadow-sm">
                <div className="absolute top-0 right-0 p-4 opacity-10">
                  <Palette size={100} />
                </div>
-               <h4 className="text-lg font-bold text-primary-light mb-2">{t('profile.hobbies')}</h4>
-               <p className="text-gray-300 text-lg relative z-10">{t('profile.hobbiesList')}</p>
+                <h4 className="text-lg font-bold text-primary-dark mb-2">{t('profile.hobbies')}</h4>
+                <p className="text-gray-700 text-lg relative z-10">{t('profile.hobbiesList')}</p>
             </div>
 
           </motion.div>

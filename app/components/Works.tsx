@@ -56,7 +56,7 @@ export default function Works() {
   ];
 
   return (
-    <section id="works" className="py-10 md:py-20 bg-zinc-950 text-white relative overflow-hidden">
+    <section id="works" className="py-10 md:py-20 bg-white text-gray-900 relative overflow-hidden">
       {/* Background Decor */}
       <video 
         autoPlay 
@@ -85,9 +85,9 @@ export default function Works() {
           className="mb-16 relative max-w-5xl mx-auto"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-blue-900/40 blur-3xl rounded-3xl -z-10" />
-          <div className="bg-zinc-900/60 border border-zinc-800 p-6 md:p-10 rounded-3xl backdrop-blur-md flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-full md:w-1/4 aspect-[2/3] bg-zinc-800 rounded-xl overflow-hidden relative group shadow-2xl shadow-purple-900/20 flex-shrink-0">
-              <div className="absolute inset-0 flex items-center justify-center bg-zinc-800 text-zinc-600">
+          <div className="bg-white border border-gray-100 p-6 md:p-10 rounded-3xl shadow-xl flex flex-col md:flex-row gap-8 items-center">
+            <div className="w-full md:w-1/4 aspect-[2/3] bg-gray-100 rounded-xl overflow-hidden relative group shadow-lg flex-shrink-0">
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400">
                 <span className="font-bold text-xl">Poster</span>
               </div>
               <img 
@@ -101,20 +101,20 @@ export default function Works() {
               <div className="inline-block px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-bold tracking-wider mb-1">
                 Latest Highlights
               </div>
-              <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              <h3 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
                 {language === 'en' ? 'Desire the Series' : 'เกมร้ายใคร่รัก'}
               </h3>
               
               <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                 <span className="px-3 py-1 bg-zinc-800 rounded text-xs text-gray-300">2025</span>
-                 <span className="px-3 py-1 bg-zinc-800 rounded text-xs text-gray-300">Drama</span>
+                 <span className="px-3 py-1 bg-gray-100 rounded text-xs text-gray-600">2025</span>
+                 <span className="px-3 py-1 bg-gray-100 rounded text-xs text-gray-600">Drama</span>
               </div>
 
-              <p className="text-lg text-gray-300">
-                {t('work.role1')}: <span className="text-white font-bold text-xl ml-2">{language === 'en' ? 'HuaYong' : 'ฮวาหย่ง'}</span>
+              <p className="text-lg text-gray-600">
+                {t('work.role1')}: <span className="text-gray-900 font-bold text-xl ml-2">{language === 'en' ? 'HuaYong' : 'ฮวาหย่ง'}</span>
               </p>
 
-              <div className="pt-5 border-t border-zinc-700/50">
+              <div className="pt-5 border-t border-gray-200">
                 <p className="text-gray-400 text-xs mb-3 uppercase tracking-widest">Watch on</p>
                 <div className="flex gap-3 justify-center md:justify-start">
                   <a 
@@ -141,12 +141,12 @@ export default function Works() {
 
         {/* Filmography Timeline */}
         <div className="mb-12">
-          <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-white border-b border-zinc-800 pb-3">
+          <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-gray-800 border-b border-gray-200 pb-3">
             <Film className="text-primary-light w-5 h-5" />
             {t('works.drama')}
           </h3>
 
-          <div className="space-y-8 border-l border-zinc-800 ml-3 md:ml-0">
+          <div className="space-y-8 border-l border-gray-200 ml-3 md:ml-0">
             {filmography.map((yearGroup, index) => (
               <motion.div
                 key={index}
@@ -171,18 +171,18 @@ export default function Works() {
                   {yearGroup.works.map((work, wIndex) => (
                     <div
                       key={wIndex}
-                      className="bg-zinc-900/40 border border-zinc-800 p-4 rounded-lg hover:border-primary-dark/40 transition-colors"
+                      className="bg-white border border-gray-100 p-4 rounded-lg shadow-sm hover:border-primary-dark/40 transition-colors"
                     >
-                      <h4 className="font-semibold text-base text-white mb-0.5">
+                      <h4 className="font-semibold text-base text-gray-900 mb-0.5">
                         {work.title[language]}
                       </h4>
                       <p className="text-xs text-gray-400 mb-1">
                         {t('work.role1')}:{" "}
-                        <span className="text-gray-300">
+                        <span className="text-gray-600">
                           {work.role[language]}
                         </span>
                       </p>
-                      <span className="text-[10px] font-mono bg-zinc-800 text-zinc-400 px-1.5 py-0.5 rounded">
+                      <span className="text-[10px] font-mono bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded">
                         {work.platform}
                       </span>
                     </div>
@@ -198,7 +198,7 @@ export default function Works() {
 
           {/* Music (2/3) */}
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-white border-b border-zinc-800 pb-3">
+            <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-gray-800 border-b border-gray-200 pb-3">
               <Music className="text-primary-light w-5 h-5" />
               {t('works.music')}
             </h3>
@@ -211,12 +211,12 @@ export default function Works() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ delay: index * 0.03 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-zinc-900/40 border border-zinc-800 hover:border-primary-dark/40 transition-colors"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white border border-gray-100 shadow-sm hover:border-primary-dark/40 transition-colors"
                 >
                   <span className="w-7 h-7 shrink-0 rounded-full bg-primary-dark/20 text-primary-light flex items-center justify-center text-[11px] font-semibold">
                     {index + 1}
                   </span>
-                  <span className="text-sm text-gray-200 leading-snug">
+                  <span className="text-sm text-gray-700 leading-snug">
                     {song}
                   </span>
                 </motion.li>
@@ -226,17 +226,17 @@ export default function Works() {
 
           {/* Variety (1/3) */}
           <div className="md:col-span-1">
-            <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-white border-b border-zinc-800 pb-3">
+            <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-gray-800 border-b border-gray-200 pb-3">
               <Tv className="text-primary-light w-5 h-5" />
               Variety Show
             </h3>
 
-            <div className="bg-zinc-900/40 border border-zinc-800 p-4 rounded-lg relative overflow-hidden hover:border-primary-dark/40 transition-colors">
+            <div className="bg-white border border-gray-100 p-4 rounded-lg relative overflow-hidden shadow-sm hover:border-primary-dark/40 transition-colors">
               <div className="absolute top-0 right-0 p-3 opacity-5">
                 <Tv size={64} />
               </div>
 
-              <h4 className="text-base font-semibold text-white mb-1">
+              <h4 className="text-base font-semibold text-gray-900 mb-1">
                 ASIA SUPER YOUNG
               </h4>
               <p className="text-xs text-gray-400">

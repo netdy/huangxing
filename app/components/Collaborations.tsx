@@ -29,7 +29,7 @@ export default function Collaborations() {
 
   const renderBrands = (brands: typeof soloBrands, titleKey: string) => (
     <div className="mb-10 last:mb-0">
-      <h3 className="text-xl font-bold text-white mb-6 border-l-4 border-primary-light pl-4">
+      <h3 className="text-xl font-bold text-gray-800 mb-6 border-l-4 border-primary-light pl-4">
         {t(titleKey)}
       </h3>
       <div className="flex flex-wrap justify-center items-start gap-6 md:gap-8">
@@ -42,7 +42,7 @@ export default function Collaborations() {
             transition={{ delay: index * 0.1, duration: 0.4 }}
             className="group flex flex-col items-center gap-2 w-28"
           >
-            <div className="w-20 h-20 rounded-full bg-zinc-900 border border-zinc-800 overflow-hidden flex items-center justify-center group-hover:border-primary-light transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(152,200,255,0.2)]">
+            <div className="w-20 h-20 rounded-full bg-white border border-gray-200 overflow-hidden flex items-center justify-center group-hover:border-primary-light transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(152,200,255,0.4)]">
               <img 
                 src={brand.image} 
                 alt={brand.name}
@@ -50,10 +50,10 @@ export default function Collaborations() {
               />
             </div>
             <div className="text-center">
-              <h4 className="text-xs font-bold text-gray-200 group-hover:text-white transition-colors truncate w-full">
+              <h4 className="text-xs font-bold text-gray-700 group-hover:text-primary-dark transition-colors truncate w-full">
                 {brand.name}
               </h4>
-              <p className="text-[10px] text-primary-light/80 mt-0.5 font-medium truncate w-full">
+              <p className="text-[10px] text-gray-500 mt-0.5 font-medium truncate w-full">
                 {brand.role}
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function Collaborations() {
   );
 
   return (
-    <section id="brands" className="py-10 bg-zinc-950/50 border-t border-zinc-900">
+    <section id="brands" className="py-10 bg-gray-50/50 border-t border-gray-100">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ export default function Collaborations() {
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
             {t('brands.title')}
           </h2>
         </motion.div>
