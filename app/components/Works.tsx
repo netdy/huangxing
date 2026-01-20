@@ -47,15 +47,15 @@ export default function Works() {
   ];
 
   const music = [
-    { title: '驯服爱欲', link: 'https://open.joox.com/s/rd?version=2&k=265lG' },
-    { title: '支配他', link: 'https://open.joox.com/s/rd?version=2&k=265lq' },
+    { title: '驯服爱欲(Taming Desire)', link: 'https://open.joox.com/s/rd?version=2&k=265lG' },
+    { title: '支配他(Puppeteer)', link: 'https://open.joox.com/s/rd?version=2&k=265lq' },
     { title: 'TAME ME', link: 'https://open.joox.com/s/rd?version=2&k=265ei' },
-    { title: '星空剪影', link: 'https://open.joox.com/s/rd?version=2&k=2659F' },
-    { title: '同花顺', link: 'https://163cn.tv/ZZSUeWw' },
+    { title: '星空剪影(Kiss me under moonlight)', link: 'https://open.joox.com/s/rd?version=2&k=2659F' },
+    { title: '同花顺(Royal Flush)', link: 'https://163cn.tv/ZZSUeWw' },
     { title: '爱情讯息(Love Message)', link: 'https://163cn.tv/ZZUKSPi' },
-    { title: '又一岁', link: 'https://open.joox.com/s/rd?version=2&k=265ep' },
-    { title: 'My Devotion', link: 'https://open.joox.com/s/rd?version=2&k=26591' },
-    { title: '真相是真', link:'https://open.spotify.com/track/47Vvmrns6XsdtnURS5mZxb?si=52dd7cff47b64db3' },
+    { title: '又一岁(One More Year )', link: 'https://open.joox.com/s/rd?version=2&k=265ep' },
+    { title: '偏爱(My Devotion)', link: 'https://open.joox.com/s/rd?version=2&k=26591' },
+    { title: '真相是真(The Truth Is True)', link:'https://open.spotify.com/track/47Vvmrns6XsdtnURS5mZxb?si=52dd7cff47b64db3' },
   ];
 
   const variety = [
