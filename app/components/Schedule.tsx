@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 const scheduleData = [
   { 
     date: { en: '21 JAN', th: '21 ม.ค.' }, 
-    time: '20:00',
+    time: '16:00',
     event: { en: 'Script Reading Teaser', th: 'ตัวอย่างกิจกรรมอ่านบทละคร' }, 
     location: 'Weibo : @ DESIRE4_' 
   },
