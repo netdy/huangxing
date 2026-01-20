@@ -11,38 +11,37 @@ export default function Works() {
     {
       year: '2025',
       works: [
-        { title: { en: `A Prime Minister's Disguise`, th: 'ปณิธานร้อยรัก' }, role: { en: 'Pei Ning', th: 'เพ่ยหนิง' }, platform: 'IQIYI' },
-        { title: { en: 'The Legend of Zang Hai', th: 'ตำนานจิ่วไห่' }, role: { en: 'Han Yi', th: 'หานอี้' }, platform: 'YOUKU' },
-        { title: { en: 'Desire The Series ', th: 'เกมร้ายใคร่รัก' }, role: { en: 'HuaYong', th: 'ฮวาหย่ง' }, platform: 'MONOMAX, GagaOOLala' },
+        { title: { en: `A Prime Minister's Disguise`, th: 'ปณิธานร้อยรัก' }, role: { en: 'Pei Ning', th: 'เพ่ยหนิง' }, platform: 'IQIYI', link: 'https://www.iq.com/play/a-prime-minister-s-disguise-episode-1-x7wr6qv3tc?lang=en_us&gad_source=1&gad_campaignid=22987036780&gbraid=0AAAAACtuwX_F-dK4d5vZngeHpfZY017DN&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCPIGX2H5nPWXKN0BPaGTHHcNWh94KXy0NYkt-nqWTi7F36FiTTVCpxoCco0QAvD_BwE' },
+        { title: { en: 'Desire The Series ', th: 'เกมร้ายใคร่รัก' }, role: { en: 'HuaYong', th: 'ฮวาหย่ง' }, platform: 'MONOMAX, GagaOOLala', link: 'https://www.monomax.me/title/105413-a-b-o-desire.html#' },
       ]
     },
     {
       year: '2024',
       works: [
-        { title: { en: 'Miss You Forever', th: 'ร้อยเล่ห์คะนึงรัก' }, role: { en: 'Xie Jing Shu', th: 'เซี่ยจิ้งซู' }, platform: 'IQIYI' },
-        { title: { en: 'NPC Forbidden Love Between', th: 'อุบัติรัก NPC' }, role: { en: 'Ye Wu Ming / Xu Yi Chi', th: 'เย่อู่หมิง / สวีอี้ฉือ' }, platform: 'TrueID' },
-        { title: { en: 'This World is Not Real', th: 'โลกนี้ไม่เป็นความจริง' }, role: { en: 'He Fan', th: 'เหอฟ่าน' }, platform: 'YOUKU' },
-        { title: { en: 'You Are My Destiny', th: 'พรหมลิขิตนี้คือเธอ' }, role: { en: 'Nie Ling Feng', th: 'เนียหลิงเฟิง' }, platform: 'WETV' },
+        { title: { en: 'Miss You Forever', th: 'ร้อยเล่ห์คะนึงรัก' }, role: { en: 'Xie Jing Shu', th: 'เซี่ยจิ้งซู' }, platform: 'IQIYI', link: 'https://www.iq.com/album/miss-you-forever-2024-1sywehf4ap1?lang=en_us&gad_source=1&gad_campaignid=22987036780&gbraid=0AAAAACtuwX_F-dK4d5vZngeHpfZY017DN&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCKHZszJenoY-1F7vdbJaJ_rW7WRVzPw2tgIkbZw9sV4wNxutx1IW3RoCrpMQAvD_BwE' },
+        { title: { en: 'NPC Forbidden Love Between', th: 'อุบัติรัก NPC' }, role: { en: 'Ye Wu Ming / Xu Yi Chi', th: 'เย่อู่หมิง / สวีอี้ฉือ' }, platform: 'TrueID', link: 'https://wetv.vip/en/play/cdc4n0f9f4up6ht/m4100b0skb7-EP1%3A_Forbidden_Love_Between' },
+        { title: { en: 'This World is Not Real', th: 'โลกนี้ไม่เป็นความจริง' }, role: { en: 'He Fan', th: 'เหอฟ่าน' }, platform: 'YOUKU', link: 'https://www.youku.tv/v/v_show/id_XNjQzNzE2MTAzNg==.html?s=fdba9eaf64d74abf93af' },
+        { title: { en: 'You Are My Destiny', th: 'พรหมลิขิตนี้คือเธอ' }, role: { en: 'Nie Ling Feng', th: 'เนียหลิงเฟิง' }, platform: 'WETV', link: 'https://wetv.vip/th/play/ggeu8wduhf4kzdp/b0034536ia0-EP1%3A_%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B8%A5%E0%B8%B4%E0%B8%82%E0%B8%B4%E0%B8%95%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%98%E0%B8%AD' },
       ]
     },
     {
       year: '2023',
       works: [
-        { title: { en: 'THE BELATED YOU', th: 'THE BELATED YOU' }, role: { en: 'Si Teng', th: 'ซือเถิง' }, platform: 'SOHU TV' },
+        { title: { en: 'THE BELATED YOU', th: 'THE BELATED YOU' }, role: { en: 'Si Teng', th: 'ซือเถิง' }, platform: 'SOHU TV', link: 'https://www.youtube.com/watch?v=Adg900r5BnM' },
       ]
     },
     {
       year: '2022',
       works: [
-        { title: { en: `Master Gu's Amnesia Sweet Wife`, th: 'หวานใจคุณชายกู้' }, role: { en: 'Gu Chen', th: 'กู้เฉิน' }, platform: 'WETV' },
-        { title: { en: 'The Forbidden Woman', th: 'รอยรักข้ามเวลา' }, role: { en: 'Zhou Yi Wu', th: 'โจวอี้อู่' }, platform: 'WETV' },
-        { title: { en: 'The Man From Dao Xiang Cun', th: 'ฮีโร่ผู้ยิ่งใหญ่เฉินเจี้ยนซิน' }, role: { en: 'Luo Feng', th: 'ลั่วเฟิง' }, platform: 'TENCENT' },
+        { title: { en: `Master Gu's Amnesia Sweet Wife`, th: 'หวานใจคุณชายกู้' }, role: { en: 'Gu Chen', th: 'กู้เฉิน' }, platform: 'WETV', link: `https://wetv.vip/en/play/ry8prz0uhxzchf4/e00421x3qxl-EP1%3A_Master_Gu's_Amnesia_Sweet_Wife` },
+        { title: { en: 'The Forbidden Woman', th: 'รอยรักข้ามเวลา' }, role: { en: 'Zhou Yi Wu', th: 'โจวอี้อู่' }, platform: 'WETV', link: 'https://wetv.vip/en/play/8ehbxm5wfc1wobb/o0045xy5fii-EP1%3A_The_Forbidden_Woman'},
+        { title: { en: 'The Man From Dao Xiang Cun', th: 'ฮีโร่ผู้ยิ่งใหญ่เฉินเจี้ยนซิน' }, role: { en: 'Luo Feng', th: 'ลั่วเฟิง' }, platform: 'TENCENT', link: '#' },
       ]
     },
     {
       year: '2021',
       works: [
-        { title: { en: 'You Are My Destiny', th: 'เธอคือพรหมลิขิตของฉัน' }, role: { en: 'Hua Jing Nian', th: 'ฮั่วจิ้งเนียน' }, platform: 'WETV' },
+        { title: { en: 'You Are My Destiny', th: 'เธอคือพรหมลิขิตของฉัน' }, role: { en: 'Hua Jing Nian', th: 'ฮั่วจิ้งเนียน' }, platform: 'WETV', link: 'https://wetv.vip/th/play/bknd4yg7cgczdoi/z4100m1suhj-EP1%3A_%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B8%A5%E0%B8%B4%E0%B8%82%E0%B8%B4%E0%B8%95%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%89%E0%B8%B1%E0%B8%99' },
       ]
     }
   ];
@@ -169,11 +168,14 @@ export default function Works() {
                 {/* Works */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                   {yearGroup.works.map((work, wIndex) => (
-                    <div
+                    <a
                       key={wIndex}
-                      className="bg-white border border-gray-100 p-4 rounded-lg shadow-sm hover:border-primary-dark/40 transition-colors"
+                      href={work.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white border border-gray-100 p-4 rounded-lg shadow-sm hover:border-primary-dark/40 transition-colors block group/card"
                     >
-                      <h4 className="font-semibold text-base text-gray-900 mb-0.5">
+                      <h4 className="font-semibold text-base text-gray-900 mb-0.5 group-hover/card:text-primary-dark transition-colors">
                         {work.title[language]}
                       </h4>
                       <p className="text-xs text-gray-400 mb-1">
@@ -185,7 +187,7 @@ export default function Works() {
                       <span className="text-[10px] font-mono bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded">
                         {work.platform}
                       </span>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </motion.div>
