@@ -73,7 +73,7 @@ export default function Works() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-4xl font-bold text-center mb-8 md:mb-16 text-primary-light"
+          className="text-4xl font-bold text-center mb-8 md:mb-16 text-primary-dark"
         >
           {t('works.title')}
         </motion.h2>
@@ -142,7 +142,7 @@ export default function Works() {
         {/* Filmography Timeline */}
         <div className="mb-12">
           <h3 className="text-xl font-bold mb-6 flex items-center gap-2 text-gray-800 border-b border-gray-200 pb-3">
-            <Film className="text-primary-light w-5 h-5" />
+            <Film className="text-primary-dark w-5 h-5" />
             {t('works.drama')}
           </h3>
 
@@ -157,12 +157,12 @@ export default function Works() {
                 className="relative pl-6 md:pl-0 md:grid md:grid-cols-[80px_1fr] md:gap-6"
               >
                 {/* Year */}
-                <div className="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-primary-light md:relative md:left-auto md:top-auto md:bg-transparent md:text-right">
-                  <span className="hidden md:block text-lg font-semibold text-primary-light">
+                <div className="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-primary-dark md:relative md:left-auto md:top-auto md:bg-transparent md:text-right">
+                  <span className="hidden md:block text-lg font-semibold text-primary-dark">
                     {yearGroup.year}
                   </span>
                 </div>
-                <span className="md:hidden text-lg font-semibold text-primary-light mb-3 block">
+                <span className="md:hidden text-lg font-semibold text-primary-dark mb-3 block">
                   {yearGroup.year}
                 </span>
 
@@ -199,7 +199,7 @@ export default function Works() {
           {/* Music (2/3) */}
           <div className="md:col-span-2">
             <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-gray-800 border-b border-gray-200 pb-3">
-              <Music className="text-primary-light w-5 h-5" />
+              <Music className="text-primary-dark w-5 h-5" />
               {t('works.music')}
             </h3>
 
@@ -213,7 +213,7 @@ export default function Works() {
                   transition={{ delay: index * 0.03 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white border border-gray-100 shadow-sm hover:border-primary-dark/40 transition-colors"
                 >
-                  <span className="w-7 h-7 shrink-0 rounded-full bg-primary-dark/20 text-primary-light flex items-center justify-center text-[11px] font-semibold">
+                  <span className="w-7 h-7 shrink-0 rounded-full bg-primary-dark/20 text-primary-dark flex items-center justify-center text-[11px] font-semibold">
                     {index + 1}
                   </span>
                   <span className="text-sm text-gray-700 leading-snug">
@@ -227,7 +227,7 @@ export default function Works() {
           {/* Variety (1/3) */}
           <div className="md:col-span-1">
             <h3 className="text-xl font-bold mb-5 flex items-center gap-2 text-gray-800 border-b border-gray-200 pb-3">
-              <Tv className="text-primary-light w-5 h-5" />
+              <Tv className="text-primary-dark w-5 h-5" />
               Variety Show
             </h3>
 
