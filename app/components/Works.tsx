@@ -47,7 +47,15 @@ export default function Works() {
   ];
 
   const music = [
-    '支配他', '驯服爱欲', 'TAME ME', '星空剪影', '同花顺','爱情讯息','又一岁' 
+    { title: '驯服爱欲', link: 'https://open.spotify.com/track/1nW2YJIIIyP4RGHwGCVNVn?si=42758382af2f4e8b' },
+    { title: '支配他', link: 'https://open.spotify.com/track/0qA6uBamAKTaS1qsbweIg7?si=f377467402044313' },
+    { title: 'TAME ME', link: 'https://open.spotify.com/track/2p3l3utLNveSSnCb1HUaE2?si=b4a44cda52f94e13' },
+    { title: '星空剪影', link: 'https://open.spotify.com/track/2ple7lgfCuN1S5XoqUnJtC?si=4dde1d4fb50845ab' },
+    { title: '同花顺', link: 'https://open.spotify.com/track/0s08J9ynaQwebbMWf4zRUu?si=1fbd6be2922f45ba' },
+    { title: '爱情讯息', link: 'https://open.spotify.com/track/588eJypP5i2hUa5y8dNLhM?si=701c8a64a2ba4444' },
+    { title: '又一岁', link: 'https://open.spotify.com/track/2ohJRz3kAMGYkgq5LnjTeO?si=7433bc5c231e4049' },
+    { title: 'My Devotion', link: 'https://open.spotify.com/track/01qToTOENIomhofEwysEYU?si=910ee81771184026' },
+    { title:'真相是真', link:'https://open.spotify.com/track/47Vvmrns6XsdtnURS5mZxb?si=52dd7cff47b64db3' },
   ];
 
   const variety = [
@@ -213,14 +221,20 @@ export default function Works() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ delay: index * 0.03 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white border border-gray-100 shadow-sm hover:border-primary-dark/40 transition-colors"
                 >
-                  <span className="w-7 h-7 shrink-0 rounded-full bg-primary-dark/20 text-primary-dark flex items-center justify-center text-[11px] font-semibold">
-                    {index + 1}
-                  </span>
-                  <span className="text-sm text-gray-700 leading-snug">
-                    {song}
-                  </span>
+                  <a
+                    href={song.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-white border border-gray-100 shadow-sm hover:border-primary-dark/40 hover:bg-gray-50 transition-all group"
+                  >
+                    <span className="w-7 h-7 shrink-0 rounded-full bg-primary-dark/20 text-primary-dark flex items-center justify-center text-[11px] font-semibold group-hover:bg-primary-dark group-hover:text-white transition-colors">
+                      {index + 1}
+                    </span>
+                    <span className="text-sm text-gray-700 leading-snug group-hover:text-primary-dark transition-colors font-medium">
+                      {song.title}
+                    </span>
+                  </a>
                 </motion.li>
               ))}
             </ul>

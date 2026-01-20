@@ -13,7 +13,7 @@ export default function Hero() {
         loop 
         muted 
         playsInline 
-        className="absolute inset-0 w-full h-full object-cover opacity-70 mix-blend-overlay"
+        className="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-overlay"
       >
         <source src="/huangxing.mp4" type="video/mp4" />
       </video>
