@@ -52,10 +52,10 @@ export default function Works() {
     { title: 'TAME ME', link: 'https://open.joox.com/s/rd?version=2&k=265ei' },
     { title: '星空剪影', link: 'https://open.joox.com/s/rd?version=2&k=2659F' },
     { title: '同花顺', link: 'https://163cn.tv/ZZSUeWw' },
-    { title: '爱情讯息', link: 'https://163cn.tv/ZZUKSPi' },
+    { title: '爱情讯息(Love Message)', link: 'https://163cn.tv/ZZUKSPi' },
     { title: '又一岁', link: 'https://open.joox.com/s/rd?version=2&k=265ep' },
     { title: 'My Devotion', link: 'https://open.joox.com/s/rd?version=2&k=26591' },
-    { title:'真相是真', link:'https://open.spotify.com/track/47Vvmrns6XsdtnURS5mZxb?si=52dd7cff47b64db3' },
+    { title: '真相是真', link:'https://open.spotify.com/track/47Vvmrns6XsdtnURS5mZxb?si=52dd7cff47b64db3' },
   ];
 
   const variety = [
