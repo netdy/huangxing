@@ -59,12 +59,11 @@ export default function Works() {
   ];
 
   const variety = [
-    { title: 'ASIA SUPER YOUNG', platform: 'TVB' }
+    { title: 'ASIA SUPER YOUNG', platform: 'TVB', link: 'https://www.youku.tv/v/v_show/id_XNjE3MDMxMDAwNA==.html?s=bbfba641295e43a88f5a&spm=a2hje.13141534.1_2.d_zj2_1&scm=20140719.apircmd.242627.video_XNjE3MDMxMDAwNA==' }
   ];
 
   return (
     <section id="works" className="py-10 md:py-20 bg-white text-gray-900 relative overflow-hidden">
-      {/* Background Decor */}
       <video 
         autoPlay 
         loop 
@@ -247,21 +246,30 @@ export default function Works() {
               Variety Show
             </h3>
 
-            <div className="bg-white border border-gray-100 p-4 rounded-lg relative overflow-hidden shadow-sm hover:border-primary-dark/40 transition-colors">
-              <div className="absolute top-0 right-0 p-3 opacity-5">
-                <Tv size={64} />
-              </div>
+            <div className="space-y-3">
+              {variety.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white border border-gray-100 p-4 rounded-lg relative overflow-hidden shadow-sm hover:border-primary-dark/40 transition-colors block group"
+                >
+                  <div className="absolute top-0 right-0 p-3 opacity-5">
+                    <Tv size={64} />
+                  </div>
 
-              <h4 className="text-base font-semibold text-gray-900 mb-1">
-                ASIA SUPER YOUNG
-              </h4>
-              <p className="text-xs text-gray-400">
-                TVB
-              </p>
+                  <h4 className="text-base font-semibold text-gray-900 mb-1 group-hover:text-primary-dark transition-colors">
+                    {item.title}
+                  </h4>
+                  <p className="text-xs text-gray-400">
+                    {item.platform}
+                  </p>
+                </a>
+              ))}
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
