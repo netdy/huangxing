@@ -5,28 +5,52 @@ import { useLanguage } from '../context/LanguageContext';
 
 const scheduleData = [
   { 
-    date: { en: '21 JAN', th: '21 ม.ค.' }, 
+    date: { en: '03 FEB', th: '03 ก.พ.' }, 
+    time: 'tba.',
+    event: { en: 'Skiing Vlog', th: 'Vlog เล่นสกี' }, 
+    location: 'Weibo : @ DESIRE4_' 
+  },
+  { 
+    date: { en: '03 FEB', th: '03 ก.พ.' }, 
+    time: '23:00',
+    event: { en: '"Chun Gui Yin" (Introduction to the Return of Spring) - Spring Festival Celebration Song', th: '"Chun Gui Yin" (บทนำแห่งการหวนคืนของวสันตฤดู) บทเพลงร่วมฉลองวันเริ่มต้นฤดูใบไม้ผลิ' }, 
+    location: 'QQ Music / Kugou / JOOX' 
+  },
+  { 
+    date: { en: '04 FEB', th: '04 ก.พ.' }, 
     time: '16:00',
-    event: { en: 'Script Reading Teaser', th: 'ตัวอย่างกิจกรรมอ่านบทละคร' }, 
-    location: 'Weibo : @ DESIRE4_' 
+    event: { en: 'Desire4 Acting Camp Ep. 2 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp ตอนที่ 2' }, 
+    location: 'Weibo : @ ABODesire_Official' 
   },
   { 
-    date: { en: '24 JAN', th: '24 ม.ค.' }, 
+    date: { en: '07 FEB', th: '07 ก.พ.' }, 
     time: '19:00',
-    event: { en: 'Full Script Reading', th: 'การร่วมอ่านบทละครฉบับเต็ม' }, 
-    location: 'Weibo : @ DESIRE4_' 
+    event: { en: 'Desire4 Acting Camp Ep.2 (Special Extended Version)', th: 'รายการ Desire4 Acting Camp ตอนที่ 2 (เวอร์ชั่นเพิ่มตอนพิเศษ)' }, 
+    location: 'Weibo : @ ABODesire_Official' 
   },
   { 
-    date: { en: '28 JAN', th: '28 ม.ค.' }, 
-    time: '18:00',
-    event: { en: 'Training Camp Teaser', th: 'ตัวอย่างรายการค่ายฝึกการแสดง' }, 
-    location: 'Weibo : @ DESIRE4_' 
+    date: { en: '08 FEB', th: '08 ก.พ.' }, 
+    time: 'tba.',
+    event: { en: 'Reaction Desire4 Acting Camp EP.2', th: 'รีแอคชัน Desire4 Acting Camp EP.2' }, 
+    location: 'Weibo : @ ABODesire_Official' 
   },
   { 
-    date: { en: '31 JAN', th: '31 ม.ค.' }, 
-    time: '20:00',
-    event: { en: 'Training Camp Ep.1', th: 'ค่ายฝึกการแสดง ตอนที่ 1' }, 
-    location: 'Weibo : @ DESIRE4_' 
+    date: { en: '11 FEB', th: '11 ก.พ.' }, 
+    time: '16:00',
+    event: { en: 'Desire4 Acting Camp Ep.3 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp EP.3' }, 
+    location: 'Weibo : @ ABODesire_Official' 
+  },
+  { 
+    date: { en: '13 FEB', th: '13 ก.พ.' }, 
+    time: '23:00',
+    event: { en: 'Special Duet Song (Valentine\'s Gift)', th: 'บทเพลงคู่สุดพิเศษจากหวงซิง & ชิวติ่งเจี๋ย ของขวัญต้อนรับเทศกาลแห่งความรัก' }, 
+    location: 'QQ Music / Kugou / JOOX' 
+  },
+  { 
+    date: { en: '14 FEB', th: '14 ก.พ.' }, 
+    time: '19:00',
+    event: { en: 'Desire4 Acting Camp Ep.3', th: 'รายการ Desire4 Acting Camp EP.3' }, 
+    location: 'Weibo : @ ABODesire_Official' 
   },
 ];
 
