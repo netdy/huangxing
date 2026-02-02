@@ -20,7 +20,7 @@ export const translations: Record<string, Record<Language, string>> = {
   // Profile / About
   'about.title': { en: 'Profile', th: 'ประวัติส่วนตัว' },
   'profile.name': { en: 'HUANGXING (Eliot)', th: 'หวงซิง (Eliot)' },
-  'profile.origname': { en: 'Original Name: HuangXin（黄鑫）', th: 'ชื่อเดิม: หวงซิน（黄鑫）' },
+  'profile.origname': { en: 'Birth Name: HuangXin（黄鑫）', th: 'ชื่อเดิม: หวงซิน（黄鑫）' },
   'profile.dobLabel': { en: 'BIRTHDAY', th: 'วันเกิด' },
   'profile.dob': { en: 'Nov 25, 1999', th: '25 พ.ย. 1999' },
   'profile.hometownLabel': { en: 'HOMETOWN', th: 'บ้านเกิด' },
@@ -34,7 +34,7 @@ export const translations: Record<string, Record<Language, string>> = {
   'profile.color': { en: 'Official Color', th: 'สีประจำตัว' },
   'profile.hobbies': { en: 'Hobbies', th: 'งานอดิเรก' },
   'profile.hobbiesList': { en: 'Drawing, Dancing, Singing', th: 'วาดรูป, เต้น, ร้องเพลง' },
-  'profile.animal': { en: 'Animal', th: 'สัตว์แทนตัว' },
+  'profile.animal': { en: 'Iconic', th: 'สัตว์แทนตัว' },
   
   // Schedule
   'schedule.title': { en: 'Upcoming Schedule', th: 'ตารางงานเร็วๆ นี้' },
