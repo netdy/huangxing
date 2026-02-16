@@ -12,7 +12,7 @@ const scheduleData = [
   },
   { 
     date: { en: '21 FEB', th: '21 ก.พ.' }, 
-    time: '16:00',
+    time: '19:00',
     event: { en: 'Desire4 Acting Camp Ep.4', th: 'รายการ Desire4 Acting Camp Ep.4' }, 
     location: 'Weibo : @ ABODesire_Official' 
   },
