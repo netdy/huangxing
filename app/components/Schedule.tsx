@@ -5,27 +5,57 @@ import { useLanguage } from '../context/LanguageContext';
 
 const scheduleData = [
   { 
-    date: { en: '18 FEB', th: '18 ก.พ.' }, 
-    time: '16:00',
-    event: { en: 'Desire4 Acting Camp Ep.4 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.4' }, 
-    location: 'Weibo : @ ABODesire_Official' 
-  },
-  { 
-    date: { en: '21 FEB', th: '21 ก.พ.' }, 
+    date: { en: '03 MAR', th: '03 มี.ค.' }, 
     time: '19:00',
-    event: { en: 'Desire4 Acting Camp Ep.4', th: 'รายการ Desire4 Acting Camp Ep.4' }, 
-    location: 'Weibo : @ ABODesire_Official' 
+    event: { en: 'Live Lafang', th: 'ไลฟ์สด ลาฟาง' }, 
+    location: 'Douyin : 拉芳轻奢洗护官方直播间' 
   },
   { 
-    date: { en: '25 FEB', th: '25 ก.พ.' }, 
+    date: { en: '04 MAR', th: '04 มี.ค.' }, 
     time: '16:00',
-    event: { en: 'Desire4 Acting Camp Ep.5 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.5' }, 
+    event: { en: 'Desire4 Acting Camp Ep.6 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.6' }, 
     location: 'Weibo : @ ABODesire_Official' 
   },
   { 
-    date: { en: '28 FEB', th: '28 ก.พ.' }, 
+    date: { en: '07 MAR', th: '07 มี.ค.' }, 
     time: '19:00',
-    event: { en: 'Desire4 Acting Camp Ep.5', th: 'รายการ Desire4 Acting Camp Ep.5' }, 
+    event: { en: 'Desire4 Acting Camp Ep.6', th: 'รายการ Desire4 Acting Camp Ep.6' }, 
+    location: 'Weibo : @ ABODesire_Official' 
+  },
+  { 
+    date: { en: '11 MAR', th: '11 มี.ค.' }, 
+    time: '16:00',
+    event: { en: 'Desire4 Acting Camp Ep.7 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.7' }, 
+    location: 'Weibo : @ ABODesire_Official' 
+  },
+  { 
+    date: { en: '14 MAR', th: '14 มี.ค.' }, 
+    time: '19:00',
+    event: { en: 'Desire4 Acting Camp Ep.7', th: 'รายการ Desire4 Acting Camp Ep.7' }, 
+    location: 'Weibo : @ ABODesire_Official' 
+  },
+  { 
+    date: { en: '18 MAR', th: '18 มี.ค.' }, 
+    time: '16:00',
+    event: { en: 'Desire4 Acting Camp Ep.8 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.8' }, 
+    location: 'Weibo : @ ABODesire_Official' 
+  },
+  { 
+    date: { en: '21 MAR', th: '21 มี.ค.' }, 
+    time: '19:00',
+    event: { en: 'Desire4 Acting Camp Ep.8', th: 'รายการ Desire4 Acting Camp Ep.8' }, 
+    location: 'Weibo : @ ABODesire_Official' 
+  },
+  { 
+    date: { en: '25 MAR', th: '25 มี.ค.' }, 
+    time: '16:00',
+    event: { en: 'Desire4 Acting Camp Ep.9 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.9' }, 
+    location: 'Weibo : @ ABODesire_Official' 
+  },
+  { 
+    date: { en: '28 MAR', th: '28 มี.ค.' }, 
+    time: '19:00',
+    event: { en: 'Desire4 Acting Camp Ep.9', th: 'รายการ Desire4 Acting Camp Ep.9' }, 
     location: 'Weibo : @ ABODesire_Official' 
   },
 ];
