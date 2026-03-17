@@ -56,6 +56,9 @@ export default function Works() {
     { title: '又一岁(One More Year )', link: 'https://open.joox.com/s/rd?version=2&k=265ep' },
     { title: '偏爱(My Devotion)', link: 'https://open.joox.com/s/rd?version=2&k=26591' },
     { title: '真相是真(The Truth Is True)', link:'https://open.spotify.com/track/47Vvmrns6XsdtnURS5mZxb?si=52dd7cff47b64db3' },
+    { title: '陌路莫回', link:'https://open.joox.com/s/rd?version=2&k=2il8c' },
+    { title: '我应该去爱你', link:'https://open.joox.com/s/rd?version=2&k=2iljH' },
+    { title: '春归引', link:'https://open.joox.com/s/rd?version=2&k=2iljg' },
   ];
 
   const variety = [
