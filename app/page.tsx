@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import LanguageToggle from "./components/LanguageToggle";
 import Schedule from "./components/Schedule";
 import Socials from "./components/Socials";
+import NewCollab from "./components/NewCollab";
 import { LanguageProvider } from "./context/LanguageContext";
 
 import Collaborations from "./components/Collaborations";
@@ -19,6 +20,7 @@ export default function Home() {
         <LanguageToggle />
         <Hero />
         <Socials />
+        <NewCollab />
         <QuickLinks />
         <About />
         <Works />

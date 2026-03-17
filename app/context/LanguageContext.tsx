@@ -70,6 +70,9 @@ export const translations: Record<string, Record<Language, string>> = {
   'brands.title': { en: 'Brand Collaborations', th: 'แบรนด์ที่ร่วมงาน' },
   'brands.solo': { en: 'HUANGXING', th: 'HUANGXING' },
   'brands.shared': { en: 'HUANGXING & QIUDINGJIE', th: 'HUANGXING & QIUDINGJIE' },
+
+  // New Collab
+  'newcollab.title': { en: 'New Collaboration', th: 'ผลงานคอลแลบล่าสุด' },
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
