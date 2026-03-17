@@ -22,7 +22,7 @@ export default function Hero() {
         <motion.h1 
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-6xl md:text-8xl font-bold tracking-tighter mb-4"
         >
@@ -34,7 +34,7 @@ export default function Hero() {
         <motion.p 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-xl md:text-2xl text-gray-200 font-light tracking-widest uppercase"
         >
@@ -45,7 +45,7 @@ export default function Hero() {
       <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >

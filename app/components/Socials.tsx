@@ -21,7 +21,7 @@ export default function Socials() {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="text-4xl font-bold mb-8 md:mb-12 text-primary-light"
         >
           {t('socials.title')}
@@ -36,7 +36,7 @@ export default function Socials() {
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               className={`flex flex-col items-center gap-2 group col-span-2 ${index === 3 ? 'col-start-2' : ''}`}
             >

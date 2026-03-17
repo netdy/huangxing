@@ -27,7 +27,7 @@ export default function About() {
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="text-4xl font-bold text-center mb-8 md:mb-16 text-gray-900"
         >
           {t('about.title')}
@@ -38,7 +38,7 @@ export default function About() {
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="w-full lg:w-1/3"
           >
             <div className="relative group">
@@ -55,7 +55,7 @@ export default function About() {
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="w-full lg:w-2/3 space-y-8"
           >
             {/* Name Header */}

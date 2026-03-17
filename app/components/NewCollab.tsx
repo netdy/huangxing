@@ -21,9 +21,9 @@ export default function NewCollab() {
             alt="THE WHOO Collection" 
             className="w-full h-auto lg:h-[80vh] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 md:p-12">
-            <h3 className="text-white text-2xl md:text-4xl font-bold font-serif">THE WHOO</h3>
-            <p className="text-white/80 text-sm md:text-base">New Collaboration</p>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-6 md:p-12">
+            <h3 className="text-white text-2xl md:text-4xl font-bold font-serif">New Collaboration</h3>
+            <p className="text-white/80 text-sm md:text-base">THE WHOO</p>
           </div>
         </motion.div>
       </div>

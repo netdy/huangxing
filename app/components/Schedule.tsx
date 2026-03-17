@@ -96,7 +96,7 @@ export default function Schedule() {
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.8 }} // Re-triggers animation
+          viewport={{ once: true, amount: 0.8 }} // Re-triggers animation
           className="text-4xl font-bold text-center mb-8 md:mb-12 text-primary-light"
         >
           {t('schedule.title')}
@@ -115,7 +115,7 @@ export default function Schedule() {
               key={index}
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, margin: "-100px" }} // Re-triggers animation
+              viewport={{ once: true, margin: "-100px" }} // Re-triggers animation
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group flex flex-col md:flex-row items-center justify-between p-6 rounded-xl border border-gray-200 bg-white shadow-sm hover:bg-gray-50 hover:border-primary-dark/30 transition-colors"
             >

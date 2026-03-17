@@ -78,7 +78,7 @@ export default function Works() {
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="text-4xl font-bold text-center mb-8 md:mb-16 text-primary-dark"
         >
           {t('works.title')}
@@ -87,7 +87,7 @@ export default function Works() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="mb-16 relative max-w-5xl mx-auto"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-blue-900/40 blur-3xl rounded-3xl -z-10" />
@@ -158,7 +158,7 @@ export default function Works() {
                 key={index}
                 initial={{ opacity: 0, x: -12 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 transition={{ delay: index * 0.08 }}
                 className="relative pl-6 md:pl-0 md:grid md:grid-cols-[80px_1fr] md:gap-6"
               >
@@ -218,7 +218,7 @@ export default function Works() {
                   key={index}
                   initial={{ opacity: 0, y: 6 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
+                  viewport={{ once: true }}
                   transition={{ delay: index * 0.03 }}
                 >
                   <a
