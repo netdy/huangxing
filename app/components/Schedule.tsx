@@ -5,76 +5,70 @@ import { useLanguage } from '../context/LanguageContext';
 
 const scheduleData = [
   { 
-    date: { en: '18 MAR', th: '18 มี.ค.' }, 
-    time: '10:25',
-    event: { en: 'Teaser Poster Release [THE WHOO]', th: 'ปล่อยภาพโปสเตอร์ทีเซอร์ THE WHOO' }, 
-    location: 'Weibo : THE_WHOO' 
-  },
-  { 
-    date: { en: '18 MAR', th: '18 มี.ค.' }, 
+    date: { en: '1 APR', th: '1 เม.ย.' }, 
     time: '16:00',
-    event: { en: 'Desire4 Acting Camp Ep.8 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.8' }, 
-    location: 'Weibo : \n@ ABODesire_Official' 
+    event: { en: 'Desire4 Acting Camp EP.10 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp EP.10' }, 
+    location: 'Weibo : @ABODesire_Official' 
   },
   { 
-    date: { en: '19 MAR', th: '19 มี.ค.' }, 
+    date: { en: '2 APR', th: '2 เม.ย.' }, 
     time: '10:25',
-    event: { en: 'Teaser Poster Release [THE WHOO]', th: 'ปล่อยภาพโปสเตอร์ทีเซอร์ THE WHOO' }, 
-    location: 'Weibo : THE_WHOO' 
+    event: { en: 'Creative Greeting Video Release [ELIOT HUANG x THE WHOO]', th: 'ปล่อยคลิปวิดีโอทักทายสุดครีเอทีฟ [ELIOT HUANG x THE WHOO]' }, 
+    location: '-' 
   },
   { 
-    date: { en: '20 MAR', th: '20 มี.ค.' }, 
-    time: '09:00',
-    event: { en: 'Official Promo & Presale [THE WHOO]', th: 'ประกาศเปิดตัวภาพโปรโมทหลัก & พรีเซลล์ THE WHOO' }, 
-    location: 'Weibo : THE_WHOO' 
-  },
-  { 
-    date: { en: '20 MAR', th: '20 มี.ค.' }, 
-    time: '09:30',
-    event: { en: 'Post Ad Video [THE WHOO]', th: 'ศิลปินโพสต์คลิปวิดีโอโฆษณา THE WHOO' }, 
-    location: 'Weibo : THE_WHOO' 
-  },
-  { 
-    date: { en: '20 MAR', th: '20 มี.ค.' }, 
-    time: '10:25',
-    event: { en: 'Activity Guidelines [THE WHOO]', th: 'แจกไกด์ไลน์กิจกรรม THE WHOO' }, 
-    location: 'Weibo : THE_WHOO' 
-  },
-  { 
-    date: { en: '21 MAR', th: '21 มี.ค.' }, 
+    date: { en: '4 APR', th: '4 เม.ย.' }, 
     time: '19:00',
-    event: { en: 'Desire4 Acting Camp Ep.8', th: 'รายการ Desire4 Acting Camp Ep.8' }, 
-    location: 'Weibo : \n@ ABODesire_Official' 
+    event: { en: 'Desire4 Acting Camp EP.10', th: 'รายการ Desire4 Acting Camp EP.10' }, 
+    location: 'Weibo : @ABODesire_Official' 
   },
   { 
-    date: { en: '22 MAR', th: '22 มี.ค.' }, 
-    time: '10:25',
-    event: { en: 'Behind The Scenes [THE WHOO]', th: 'ปล่อยคลิปเบื้องหลังการถ่ายทำ THE WHOO' }, 
-    location: 'Weibo : THE_WHOO' 
-  },
-  { 
-    date: { en: '25 MAR', th: '25 มี.ค.' }, 
+    date: { en: '8 APR', th: '8 เม.ย.' }, 
     time: '16:00',
-    event: { en: 'Desire4 Acting Camp Ep.9 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp Ep.9' }, 
-    location: 'Weibo : \n@ ABODesire_Official' 
+    event: { en: 'Desire4 Acting Camp EP.11 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp EP.11' }, 
+    location: 'Weibo : @ABODesire_Official' 
   },
   { 
-    date: { en: '25 MAR', th: '25 มี.ค.' }, 
-    time: 'tba',
-    event: { en: 'Transformation Video [THE WHOO]', th: 'ศิลปินโพสต์คลิปวิดีโอเปลี่ยนลุค THE WHOO' }, 
-    location: 'Douyin' 
-  },
-  { 
-    date: { en: '26 MAR', th: '26 มี.ค.' }, 
-    time: '10:25',
-    event: { en: 'Behind The Scenes [THE WHOO]', th: 'ปล่อยคลิปเบื้องหลังการถ่ายทำ THE WHOO' }, 
-    location: 'THE WHOO' 
-  },
-  { 
-    date: { en: '28 MAR', th: '28 มี.ค.' }, 
+    date: { en: '11 APR', th: '11 เม.ย.' }, 
     time: '19:00',
-    event: { en: 'Desire4 Acting Camp Ep.9', th: 'รายการ Desire4 Acting Camp Ep.9' }, 
-    location: 'Weibo : \n@ ABODesire_Official' 
+    event: { en: 'Desire4 Acting Camp EP.11', th: 'รายการ Desire4 Acting Camp EP.11' }, 
+    location: 'Weibo : @ABODesire_Official' 
+  },
+  { 
+    date: { en: '15 APR', th: '15 เม.ย.' }, 
+    time: '16:00',
+    event: { en: 'Desire4 Acting Camp EP.12 Teaser', th: 'ตัวอย่างรายการ Desire4 Acting Camp EP.12' }, 
+    location: 'Weibo : @ABODesire_Official' 
+  },
+  { 
+    date: { en: '18 APR', th: '18 เม.ย.' }, 
+    time: '19:00',
+    event: { en: 'Desire4 Acting Camp EP.12', th: 'รายการ Desire4 Acting Camp EP.12' }, 
+    location: 'Weibo : @ABODesire_Official' 
+  },
+  { 
+    date: { en: '22 APR', th: '22 เม.ย.' }, 
+    time: 'TBA',
+    event: { en: 'D-Departure / Desire4 Acting Camp (Reaction EP?) Teaser', th: 'ตัวอย่างรายการ D-Departure / Desire4 Acting Camp (Reaction EP?)' }, 
+    location: 'Weibo : @ABODesire_Official' 
+  },
+  { 
+    date: { en: '25 APR', th: '25 เม.ย.' }, 
+    time: 'TBA',
+    event: { en: 'WIEA International Entertainment Festival', th: 'WIEA International Entertainment Festival' }, 
+    location: 'Galaxy Arena Macau' 
+  },
+  { 
+    date: { en: '25 APR', th: '25 เม.ย.' }, 
+    time: 'TBA',
+    event: { en: 'D-Departure / Desire4 Acting Camp (Reaction EP?)', th: 'รายการ D-Departure / Desire4 Acting Camp (Reaction EP?)' }, 
+    location: 'Weibo : @ABODesire_Official' 
+  },
+  { 
+    date: { en: '29 APR', th: '29 เม.ย.' }, 
+    time: 'TBA',
+    event: { en: 'Secret Vlog Teaser', th: 'ตัวอย่าง Vlog พิเศษ (Secret Vlog)' }, 
+    location: 'TBA' 
   },
 ];
 
