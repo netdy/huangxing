@@ -55,12 +55,6 @@ const scheduleData = [
   { 
     date: { en: '25 APR', th: '25 เม.ย.' }, 
     time: 'TBA',
-    event: { en: 'WIEA International Entertainment Festival', th: 'WIEA International Entertainment Festival' }, 
-    location: 'Galaxy Arena Macau' 
-  },
-  { 
-    date: { en: '25 APR', th: '25 เม.ย.' }, 
-    time: 'TBA',
     event: { en: 'D-Departure / Desire4 Acting Camp (Reaction EP?)', th: 'รายการ D-Departure / Desire4 Acting Camp (Reaction EP?)' }, 
     location: 'Weibo : @ABODesire_Official' 
   },
