@@ -3,7 +3,6 @@ import BackgroundMusic from "./components/BackgroundMusic";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import LanguageToggle from "./components/LanguageToggle";
-import Schedule from "./components/Schedule";
 import Socials from "./components/Socials";
 import { LanguageProvider } from "./context/LanguageContext";
 
@@ -24,9 +23,9 @@ export default function Home() {
         <About />
         <Works />
         <Collaborations />
-        <section id="schedule">
+        {/* <section id="schedule">
           <Schedule />
-        </section>
+        </section> */}
         <Gallery />
         
         <footer className="py-8 bg-gray-50 text-center text-gray-500 text-sm">

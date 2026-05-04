@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, Crown, Film, Globe, Image, User } from 'lucide-react';
+import { Crown, Film, Globe, Image, User } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function QuickLinks() {
@@ -11,7 +11,7 @@ export default function QuickLinks() {
     { id: 'about', icon: User, label: 'about.title', href: '#about' },
     { id: 'works', icon: Film, label: 'works.title', href: '#works' },
     { id: 'brands', icon: Crown, label: 'brands.title', href: '#brands' },
-    { id: 'schedule', icon: Calendar, label: 'nav.schedule', href: '#schedule' },
+    //{ id: 'schedule', icon: Calendar, label: 'nav.schedule', href: '#schedule' },
     { id: 'gallery', icon: Image, label: 'nav.gallery', href: '#gallery' },
     { id: 'socials', icon: Globe, label: 'nav.socials', href: '#socials' },
   ];
