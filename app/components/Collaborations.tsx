@@ -15,6 +15,7 @@ export default function Collaborations() {
     { name: 'PANDORA潘多拉珠宝', role: 'BA', image: '/brand/pandora.jpg' },
     { name: 'MENTHOLATUM', role: 'BA', image: '/brand/mentro.jpg' },
     { name: 'REDCHAMBER朱栈', role: 'BA', image: '/brand/rc.jpg' },
+    { name: 'The Whoo', role: 'BA', image: '/brand/thewhoo.png' },
   ];
 
   // 6 Brands with QIUDINGJIE (Edit names, roles, and images here)
@@ -25,6 +26,7 @@ export default function Collaborations() {
     { name: 'MERRYCHENG', role: 'BA', image: '/brand/merrycheng.jpg' },
     { name: 'MISTINE', role: 'BA', image: '/brand/mistine.jpg' },
     { name: 'LAFANG', role: 'BA', image: '/brand/lafang.jpg' },
+    { name: 'MINISO', role: 'BA', image: '/brand/miniso.png' },
   ];
 
   const renderBrands = (brands: typeof soloBrands, titleKey: string) => (
