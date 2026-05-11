@@ -16,7 +16,7 @@ export default function Collaborations() {
     { name: 'MENTHOLATUM', role: 'BA', image: '/brand/mentro.jpg' },
     { name: 'REDCHAMBER朱栈', role: 'BA', image: '/brand/rc.jpg' },
     { name: 'The Whoo', role: 'BA', image: '/brand/thewhoo.png' },
-    { name: 'JMOON', role: 'BA', image: '/brand/jmoon.png' },
+    { name: 'JMOON', role: 'BS', image: '/brand/jmoon.png' },
   ];
 
   // 6 Brands with QIUDINGJIE (Edit names, roles, and images here)
